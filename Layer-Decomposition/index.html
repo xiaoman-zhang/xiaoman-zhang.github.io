@@ -239,23 +239,22 @@
               </td>
 
             </tr></tbody>
-          </table>	
+          </table>
 	
-
-	<hr>
-	
-	<table align=center width=850px>
-		<center><h1>Abstract</h1></center>
-		<tr>
-			<td>
-				In this paper, the objective is to design a self-supervised approach that learns effective representation for tumor segmentation.
-				Our key observation is that tumors are generally characterised independently to the surrounding tissues,
-				which allows to treat each input sample as a composition of tumor and normal organ,thus, 
-				we propose to train a model that enables to decompose the input sample into tumor, health organ, along with mask for linear blending.
-			</td>
-		</tr>
-	</table>
-	
+	<br><hr>
+        <center>
+          <h2>
+            Abstract
+          </h2>
+        </center>
+        <p>
+        <left>
+          In this paper, the objective is to design a self-supervised approach that learns effective representation for tumor segmentation.
+	  Our key observation is that tumors are generally characterised independently to the surrounding tissues,
+	  which allows to treat each input sample as a composition of tumor and normal organ,thus, 
+	  we propose to train a model that enables to decompose the input sample into tumor, health organ, along with mask for linear blending.
+	</left>
+      </p>
 	<table align=center width=850px>
 		<center>
 			<tr>
@@ -267,49 +266,26 @@
 			</tr>
 		</center>
 	</table>
+      <br>
+	
+      <br><hr>
+        <center>
+          <h2>
+            Data Synthesis
+          </h2>
+        </center>
+        <p>
+        <left>
+	  Illustration of the proposed image transformations, the first columns shows the normal image and generated mask. 
+	  We have displayed a randomly selected normal image undergoing different transformations functions (bottom row) and the corresponding synthetic training data (top row) in columns 2—8. 
+	</left>
+        </p>
+	<p><img class="rounded"  src="./resources/transformation.png" width="800px"></p>
+	
 	<br>
-
 	<hr>
 
-	<center><h1>Data Synthesis</h1></center>
-	
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td>
-				Illustration of the proposed image transformations, the first columns shows the normal image and generated mask. 
-				We have displayed a randomly selected normal image undergoing different transformations functions (bottom row) and the corresponding synthetic training data (top row) in columns 2—8. 
-				</td>
-			</tr>
-		</center>
-	</table>
-
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td align=center width=800px>
-				<center>
-					<td><img class="center" style="width:800px" src="./resources/data.png"/></td>
-				</center>
-			</td>
-			</tr>
-		</center>
-	</table>
-	
-	<table align=center width=850px>
-		<tr>
-			<td align=center width=850px>
-				<center>
-					<td><img class="center" style="width:800px" src="./resources/transformation.png"/></td>
-				</center>
-			</td>
-		</tr>
-	</table>
-	<br>
-
-	<hr>
-
-	<center><h1>Visualizations</h1></center>
+	<center><h2>Visualizations</h2></center>
 	<table align=center width=420px>
 		<center>
 			<tr>
@@ -329,41 +305,29 @@
 			</td>
 		</tr>
 	</table>
-	<br>
-	
-	<hr>
-	
-	
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://xiaoman-zhang.github.io/Layer-Decomposition/'>[GitHub]</a>
-			</center>
-		</span>
-	</table>
-	<br>
-	<hr>
-	<table align=center width=600px>
-		<tr>
-			<td><span style="font-size:14pt"><center>
-				<a href="./resources/bibtex.txt">[Bibtex]</a>
-			</center></td>
-		</tr>
-	</table>
 
-	<hr>
-	<br>
+      <br>
+      <hr>
+      <center> <h2> Cite our papers </h2> </center>
+      <pre><code>
+      @article{/,
+      title={Self-supervised Tumor Segmentation through Layer Decomposition}, 
+      author={/},
+      year={/},
+      eprint={/},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+      }
+      </code></pre>
+      
+      <br>
+      <hr>
+      <center> <h2> Acknowledgements </h2> </center>
+      <p> 
+	      Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+      </p>
+      <br>
 
-	<table align=center width=900px>
-		<tr>
-			<td width=400px>
-				<left>
-					<center><h1>Acknowledgements</h1></center>
-					Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
-				</left>
-			</td>
-		</tr>
-	</table>
 
 <br>
 </body>
