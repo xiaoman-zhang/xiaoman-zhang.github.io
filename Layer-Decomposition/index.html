@@ -274,70 +274,24 @@
 
       <center><h2>Results</h2></center>
       <p><b>R1: Results of zero-shot tumor segmentation </b> </p>
-	
-	
-		<table>
-		<caption>Compare with SOTA unsupervised anomaly segmentation methods on whole tumor segmentation.</caption>
-		<tbody>
-		<tr class="odd">
-		<td style="text-align: center;">Method</td>
-		<td style="text-align: center;">Year</td>
-		<td style="text-align: center;">Supervision</td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;"></td>
-		</tr>
-		<tr class="even">
-		<td style="text-align: center;">(lr)<span>4-5</span></td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;">WTS</td>
-		<td style="text-align: center;">LTS</td>
-		</tr>
-		<tr class="odd">
-		<td style="text-align: center;">Scratch</td>
-		<td style="text-align: center;">–</td>
-		<td style="text-align: center;"><span class="math inline">✓</span></td>
-		<td style="text-align: center;"><span class="math inline">86.03 ± 0.90</span></td>
-		<td style="text-align: center;"><span class="math inline">60.04 ± 4.03</span></td>
-		</tr>
-		<tr class="even">
-		<td style="text-align: center;">3D IF</td>
-		<td style="text-align: center;">2021</td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;"><span class="math inline">67.20 ± 15.5<sup>*</sup></span></td>
-		<td style="text-align: center;">–</td>
-		</tr>
-		<tr class="odd">
-		<td style="text-align: center;">ASC-Net</td>
-		<td style="text-align: center;">2021</td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;"><span class="math inline">63.67<sup>*</sup></span></td>
-		<td style="text-align: center;"><span class="math inline">32.24<sup>*</sup></span></td>
-		</tr>
-		<tr class="even">
-		<td style="text-align: center;"><span><strong>Ours</strong></span></td>
-		<td style="text-align: center;">2021</td>
-		<td style="text-align: center;"></td>
-		<td style="text-align: center;"><span><strong>71.66 <span class="math inline">±</span> 0.84</strong> </span></td>
-		<td style="text-align: center;"><span><strong>40.78 <span class="math inline">±</span> 0.43</strong></span></td>
-		</tr>
-		</tbody>
-		</table>
-
-	
-<p>Results with <span class="math inline">*</span> are directly copied from original papers <span class="citation" data-cites="marimont2021implicit Dey2021ASCNetA"></span>.</p>
-<p><span id="tab4" label="tab4">[tab4]</span></p>
-	
-	
+	<div class="container">
+		<div class="image">
+			<img style="width:500px" src='./resources/table.png'></img>
+		</div>
+		<div class="text"> 
+			<p>  we compare with approaches that advocate zero-shot tumor segmentation, <i>i.e.</i> the state-of-the-art unsupervised anomaly segmentation methods.
+				As shown in the Table, our approach surpasses the other ones by a large margin.
+			</p>
+		</div>
+	</div>
 	
       <p><b>R2: Analysis of data efficiency </b> </p>	
 	<div class="container">
 		<div class="image">
-			<img style="width:400px" src='./resources/result_2.png'></img>
+			<img style="width:500px" src='./resources/result_2.png'></img>
 		</div>
 		<div class="text"> 
 			<p> We study the usefulness of self-supervised learning by varying the number of available volume annotations. 
-				
 				For both tasks, our proposed method shows superior performance on all supervision level.  
 			</p>
 		</div>
