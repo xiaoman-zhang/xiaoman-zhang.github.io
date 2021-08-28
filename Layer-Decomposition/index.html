@@ -264,6 +264,19 @@
       <p><b>R1: Fully Supervised Finetuning </b> </p>
       <p><b>R2: Analysis of data efficiency </b> </p>	
 	<p><img class="left"  src="./resources/result_2.png" width="600px"></p>
+	<div class="container">
+		<div class="image">
+			<img style="width:400px" src='./resources/result_2.png'></img>
+		</div>
+		<div class="text">
+			<p> We study the usefulness of self-supervised learning by varying the number of available volume annotations. SSL indeed demonstrate superior generalisation over the scratch model that is trained naively,
+				however, such advantage quickly diminishes as we introduce more aggressive data augmentations into the from-scratch training procedure.
+				While it may seem surprising at first glance, we argue this is in fact a fair comparison between two-stage training and from-scratch training, as the in the SSL approaches, proxy tasks are usually defined to learn representations that are invariant to certain type of data augmentation.
+				Thus, in our experiments, we always include the same set of augmentations.
+			</p>
+		</div>
+	</div>
+	
       <p><b>R3: Comparison with Anomaly Segmentation </b> </p>
 
       <br>
