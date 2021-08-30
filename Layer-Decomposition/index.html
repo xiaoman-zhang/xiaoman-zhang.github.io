@@ -274,36 +274,6 @@
       <br>
       <hr>
 
-      <center><h2>Results</h2></center>
-
-	
-      <p><b>R1: Results of zero-shot tumor segmentation </b> </p>
-	<div class="container">
-		<div class="image">
-			<img style="width:400px" src='./resources/table.png'></img>
-		</div>
-		<div class="text"> 
-			<p>  We compare with approaches that advocate zero-shot tumor segmentation, <i>i.e.</i> the state-of-the-art unsupervised anomaly segmentation methods.
-				As shown in the Table, our approach surpasses the other ones by a large margin.
-			</p>
-		</div>
-	</div>
-	
-      <p><b>R2: Analysis of data efficiency </b> </p>	
-	<div class="container">
-		<div class="image">
-			<img style="width:400px" src='./resources/result_2.png'></img>
-		</div>
-		<div class="text"> 
-			<p> We study the usefulness of self-supervised learning by varying the number of available volume annotations. 
-				For both tasks, our proposed method shows superior performance on all supervision level.  
-			</p>
-		</div>
-	</div>
-	
-      <br>
-      <hr>
-
       <center><h2>Visualizations of zero-shot tumor segmentation </h2></center>
       <p><b>2D Visualization </b> </p>
       <p><left>
@@ -321,6 +291,46 @@
       <p><img class="left"  src="./resources/result_lits/concat_8.gif" width="800px"></p>
       <!--<br>
       <hr>
+
+      <center><h2>Results</h2></center>
+      <p><b>R1: Fully Supervised Fine-tuning </b> </p>
+      <p><left>
+	      Compare with SOTA self-supervised methods on WTS (brain whole tumor segmentation) and LTS (liver tumor segmentation).
+      </left></p>
+      <p><img class="center"  src="./resources/table_1.png" width="800px"></p>
+      <p><left>
+	      Compare with SOTA self-supervised methods on BTS(Whole tumor, Tumor core and Enhanced tumor segmentation).
+      </left></p>
+      <p><img class="center"  src="./resources/table_2.png" width="800px"></p>
+	
+      <p><b>R2: Analysis of Model Transferability </b> </p>	
+	<div class="container">
+		<div class="image">
+			<img style="width:400px" src='./resources/result_2.png'></img>
+		</div>
+		<div class="text"> 
+			<p> We study the usefulness of self-supervised learning by varying the number of available volume annotations. 
+				For both tasks, our proposed method shows superior performance on all supervision level.  
+			</p>
+		</div>
+	</div>
+	
+      <p><b>R3: Results of Zero-shot Tumor Segmentation </b> </p>
+	<div class="container">
+		<div class="image">
+			<img style="width:400px" src='./resources/table.png'></img>
+		</div>
+		<div class="text"> 
+			<p>  We compare with approaches that advocate zero-shot tumor segmentation, <i>i.e.</i> the state-of-the-art unsupervised anomaly segmentation methods.
+				As shown in the Table, our approach surpasses the other ones by a large margin.
+			</p>
+		</div>
+	</div>
+
+	
+      <br>
+      <hr>
+
       <center> <h2> Cite our papers </h2> </center>
       <pre><code>
       @article{/,
