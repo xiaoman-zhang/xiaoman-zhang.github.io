@@ -1,0 +1,8 @@
+@misc{zhang2021selfsupervised,
+      title={Self-supervised Tumor Segmentation through Layer Decomposition}, 
+      author={Xiaoman Zhang and Weidi Xie and Chaoqin Huang and Ya Zhang and Yanfeng Wang},
+      year={2021},
+      eprint={2109.03230},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
