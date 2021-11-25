@@ -266,10 +266,12 @@
       <br><hr>
       <center> <h2> Data Synthesis </h2> </center>
         <p style="text-align:justify; text-justify:inter-ideograph;"><left>
-	  Illustration of the proposed image transformations, the first columns shows the normal image and generated mask. 
-	  We have displayed a randomly selected normal image undergoing different transformations functions (bottom row) and the corresponding synthetic training data (top row) in columns <span>2 - 8</span>. 
-        </left></p>
-        <p><img class="left"  src="./resources/transformation.png" width="800px"></p>
+	  Illustration of the data simulation pipeline.
+	  (a) Data simulation pipeline. We first simulate the tumor with a transformed image and a generated 3D mask, which provide texture and shape respectively. Then the synthetic data is composed by blending the simulated tumor into the normal image.
+	  (b) Visualisation of shape simulation. The first row presents the 3D polyhedrons with various shapes, sizes and locations, and the second row shows the binary masks.
+	  (c) Visualisation of texture simulation. We have displayed a randomly selected normal image $x_{n_j}$ undergoing different transformations functions (top row), the corresponding simulated tumor (second row), and synthetic training data (bottom row) in columns 2$-$8. 
+	</left></p>
+        <p><img class="left"  src="./resources/supple_fig_datasyn.png" width="800px"></p>
       <br>
       <hr>
 
