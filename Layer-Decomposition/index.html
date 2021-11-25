@@ -255,11 +255,11 @@
       <center><h2> Abstract </h2> </center>
       <p style="text-align:justify; text-justify:inter-ideograph;">
       <left>
-	      In this paper, we propose a self-supervised approach for tumor segmentation, specifically, we advocate a zero shot setting, where models from self-supervised learning should be directly applicable for downstream task, <i> without </i> using any manual annotations whatsoever.
-	We make the following contributions: 
-	<i>First</i>, with careful examination on existing self-supervised learning approaches, we reveal the surprising result that, given suitable data augmentation, models trained from scratch in fact achieve comparable performance to those pre-trained with self-supervised learning;
-	<i>Second</i>, inspired by the fact that tumors tend to be characterized <i>independently</i> to the contexts, we propose a scalable pipeline for generating synthetic tumor data,  and train a self-supervised model that minimises the generalisation gap with downstream task.
-	<i>Third</i>, we conduct extensive ablation studies on different downstream datasets, BraTS2018 for brain tumor segmentation and LiTS2017 for liver tumor segmentation, while evaluating the model transferability for tumor segmentation under a low-annotation regime, including an extreme case of zero shot segmentation, our proposed approach demonstrate state-of-the-art performance, substantially outperforming all existing self-supervised approaches, and opening up the usage of self-supervised learning in practical scenarios.
+	      In this paper, we target self-supervised representation learning for zero-shot tumor segmentation. We make the following contributions: 
+	<i>First</i>, we advocate a zero-shot setting, where models from pre-training should be directly applicable for the downstream task, without using any manual annotations. 
+	<i>Second</i>, we take inspiration from ``layer-decomposition", and innovate on the training regime with simulated tumor data. 
+	<i>Third</i>, we conduct extensive ablation studies to analyse the critical components in data simulation, and validate the necessity of different proxy tasks.We demonstrate that, with sufficient texture randomization in simulation, model trained on synthetic data can effortlessly generalise to segment real tumor data. 
+	<i>Forth</i>, our approach achieves superior results for zero-shot tumor segmentation on different downstream datasets, BraTS2018 for brain tumor segmentation and LiTS2017 for liver tumor segmentation. While evaluating the model transferability for tumor segmentation under a low-annotation regime, the proposed approach also outperforms all existing self-supervised approaches, opening up the usage of self-supervised learning in practical scenarios.
       </left></p>
       <p><img class="left"  src="./resources/framework.png" width="800px"></p>
 	
@@ -334,6 +334,7 @@
 	      Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
       </p>
       <br>
+
 
 
 
