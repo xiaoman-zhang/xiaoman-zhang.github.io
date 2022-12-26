@@ -1,0 +1,5 @@
+@misc{zhang2021selfsupervised,
+      title={KAD: Knowledge-enhanced auto-diagnosis of chest X-ray images}, 
+      author={Xiaoman Zhang and Chaoyi Wu and Weidi Xie and Ya Zhang and Yanfeng Wang},
+      year={2022},
+}
