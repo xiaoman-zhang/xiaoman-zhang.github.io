@@ -257,12 +257,11 @@
       <left>
 	      Foundation models pre-trained on a broad system of general data demonstrate significant gains across various domains including computer vision and natural language processing. 
         However, the application in the medical domain is still in the initial stage, as the problems in medical diagnosis naturally require long-tailed and fine-grained knowledge understanding, thus heavily relying on expertise from clinicians. 
-        Here we propose a medical knowledge-enhanced vision-language pre-training method for auto-diagnosis of chest X-ray images, termed as Knowledge-enhanced Auto Diagnosis~(KAD), 
+        Here we propose a medical knowledge-enhanced vision-language pre-training method for auto-diagnosis of chest X-ray images, termed as Knowledge-enhanced Auto Diagnosis (KAD), 
         which leverages domain expert knowledge from the medical knowledge base Unified Medical Language System (UMLS) to improve vision-and-language understanding and facilitate the zero-shot disease diagnosis. 
         KAD demonstrates superior ability in auto-diagnosis of unseen pathologies, with zero-shot performance significantly higher than precious medical VLP models, and even comparable to fully-supervised approaches. 
         Notably, this is the first foundation model in X-ray with zero-shot performance comparable or exceeding the average for expert radiologists.
       </left></p>
-      <br><hr>
       
       <br><hr>
       <center> <h2> Architecture </h2> </center>
@@ -275,8 +274,17 @@
       (d), During the inference stage, we simply encode the disease name as a query input, and DQN will output the probability that the pathology is present in the input image.
       </left></p>
       <p><img class="left"  src="./resources/KAD.png" width="800px"></p>
+	
       <br><hr>
-      
+      <center> <h2> Visualization </h2> </center>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      <left>
+       Sample visualization of randomly chosen samples from NIH ChestXray14, we present both the original image (left) and an attention map generated from KAD (right). 
+       In the original images, red boxes denote lesion areas annotated by radiologists. 
+       In the attention maps, the red to blue spectrum are plot on the original image with red representing high attention regions and blue representing low attention.
+      </left></p>
+      <p><img class="left"  src="./resources/visualize.png" width="800px"></p>
+	
       <br><hr>
       <center><h2>Results</h2></center>
       <p><b>R1: Padchest </b> </p>
@@ -297,15 +305,6 @@
       </left></p>
       <p><img class="center"  src="./resources/chexpert.png" width="800px"></p>
     
-      <p><b>Visualization </b> </p>
-      <p><left>
-	     Sample visualization of randomly chosen samples from NIH ChestXray14, we present both the original image (left) and an attention map generated from KAD (right). 
-       In the original images, red boxes denote lesion areas annotated by radiologists. 
-       In the attention maps, the red to blue spectrum are plot on the original image with red representing high attention regions and blue representing low attention.
-      </left></p>
-      <p><img class="center"  src="./resources/visualize.png" width="800px"></p>
-      <br><hr>
-	
       <br>
       <hr>
       <center> <h2> Acknowledgements </h2> </center>
