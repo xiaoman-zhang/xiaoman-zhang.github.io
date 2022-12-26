@@ -257,22 +257,22 @@
         KAD demonstrates superior ability in auto-diagnosis of unseen pathologies, with zero-shot performance significantly higher than precious medical VLP models, and even comparable to fully-supervised approaches. 
         Notably, this is the first foundation model in X-ray with zero-shot performance comparable or exceeding the average for expert radiologists.
       </left></p>
+      <br><hr>
       
-	
       <br><hr>
       <center> <h2> Architecture </h2> </center>
-      <p style="text-align:justify; text-justify:inter-ideograph;"><left>
+      <p style="text-align:justify; text-justify:inter-ideograph;">
+      <left>
       Overview of the KAD workflow. 
       (a), Knowledge base used for training the text encoder. It contains two parts, knowledge graph consisting of concept-relation-concept triplets and concept info list consisting of concept-definition pairs.
       (b), In the first stage, the text encoder is trained to learns textual representations by maximizing similarities between positive pairs.
       (c), In the second stage, we employ the pre-trained text encoder to perform image-text contrastive learning with paired chest X-rays and entities extracted from the radiology reports and optimize a Disease Query Network (DQN) for classification.
       (d), During the inference stage, we simply encode the disease name as a query input, and DQN will output the probability that the pathology is present in the input image.
-	  
       </left></p>
-        <p><img class="left"  src="./resources/KAD.png" width="800px"></p>
-      <br>
-      <hr>
+      <p><img class="left"  src="./resources/KAD.png" width="800px"></p>
+      <br><hr>
       
+      <br><hr>
       <center><h2>Results</h2></center>
       <p><b>R1: Padchest </b> </p>
       <p><left>
@@ -299,7 +299,8 @@
        In the attention maps, the red to blue spectrum are plot on the original image with red representing high attention regions and blue representing low attention.
       </left></p>
       <p><img class="center"  src="./resources/visualize.png" width="800px"></p>
-      
+      <br><hr>
+	
       <br>
       <hr>
       <center> <h2> Acknowledgements </h2> </center>
