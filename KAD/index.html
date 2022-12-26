@@ -290,18 +290,24 @@
       <p><b>R1: Padchest </b> </p>
       <p><left>
 	      Comparison of KAD with SOTA medical image-text pre-training models on unseen radiographic findings in the PadChest dataset.
+	      We evaluate model on the human-annotated subset of the PadChest dataset (n = 39,053 chest X-rays) and mean AUC and 95% CI of KAD are shown for each radiographic finding n > 50 labelled as high importance by an expert radiologist. 
+	      No labelled samples were seen during training for any of the radiographic findings in this dataset.
+	      KAD achieves an AUC of at least 0.900 on 8 findings  and at least 0.700 on 44 findings out of 57 radiographic findings where (n > 50) in the PadChest test dataset (n = 39,053).
       </left></p>
       <p><img class="center"  src="./resources/padchest.png" width="800px"></p>
 
       <p><b>R2: ChestXray14 </b> </p>	
       <p><left>
 	     Comparison of proposed KAD with SOTA self-supervised baseline models and medical image-text pre-training models on ChestXray14 with different ratio of labeled data used.
+	     AUC, F1 score are reported, and the metrics refer to the macro average on all the diseases. Note that for fairness, all baselines use the same backbone as the basic image encoder (that is, ResNet50). 
+	     The percentages refer to the percentage of labels used in the training data.
       </left></p>
       <p><img class="center"  src="./resources/chestxray14.png" width="800px"></p>
     
       <p><b>R3: CheXpert </b> </p>	
       <p><left>
 	    Comparisons of proposed KAD with SOTA medical image-text pre-training models and three board-certified radiologists on five competition pathologies in CheXpert dataset.
+	    The AUC, F1 scores and MCC of five pathologies are shown in the plots, where the average and 95% CI are shown. 
       </left></p>
       <p><img class="center"  src="./resources/chexpert.png" width="800px"></p>
     
