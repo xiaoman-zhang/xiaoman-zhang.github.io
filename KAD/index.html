@@ -255,12 +255,11 @@
       <center><h2> Abstract </h2> </center>
       <p style="text-align:justify; text-justify:inter-ideograph;">
       <left>
-	      Foundation models pre-trained on a broad system of general data demonstrate significant gains across various domains including computer vision and natural language processing. 
-        However, the application in the medical domain is still in the initial stage, as the problems in medical diagnosis naturally require long-tailed and fine-grained knowledge understanding, thus heavily relying on expertise from clinicians. 
-        Here we propose a medical knowledge-enhanced vision-language pre-training method for auto-diagnosis of chest X-ray images, termed as Knowledge-enhanced Auto Diagnosis (KAD), 
-        which leverages domain expert knowledge from the medical knowledge base Unified Medical Language System (UMLS) to improve vision-and-language understanding and facilitate the zero-shot disease diagnosis. 
-        KAD demonstrates superior ability in auto-diagnosis of unseen pathologies, with zero-shot performance significantly higher than precious medical VLP models, and even comparable to fully-supervised approaches. 
-        Notably, this is the first foundation model in X-ray with zero-shot performance comparable or exceeding the average for expert radiologists.
+	Despite of the success of multi-modal foundation models pre-trained on large-scale data in natural language understanding and vision recognition, its counterpart in medical and clinical domains remains preliminary, due to the fine-grained recognition nature of the medical tasks with high demanding on domain knowledge. 
+	Here, we propose a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images.
+	The algorithm, named as Knowledge-enhanced Auto Diagnosis (KAD), first trains a text encoder on an existing medical knowledge graph to embed knowledge about the concept definitions and concept relationships, and then leverages the pre-trained text encoder to enhance the image-text contrastive learning from paired chest X-rays and radiology reports. 
+	We validate KAD on three external X-ray datasets. The zero-shot performance of KAD, is not only comparable to that of the fully-supervised models, but also, for the first time, superior to the average of three expert radiologists for three (out of five) pathologies with statistical significance. 
+	When few-shot annotation is available, KAD also surpasses all existing approaches in finetuning settings, demonstrating the potential for application in different clinical scenarios.
       </left></p>
       
       <br><hr>
@@ -303,6 +302,16 @@
 	     The percentages refer to the percentage of labels used in the training data.
       </left></p>
       <p><img class="center"  src="./resources/chestxray14.png" width="800px"></p>
+       <div class="container">
+        <div class="image" width="550px">
+          <center><p><img class="center"  src="./resources/radar.png" width="500px"></p></center>
+        </div>
+        <div class="text" width="250px"> 
+          <p> The radar figure of our method and other methods of 14 diseases on Chestx-ray14 datasets 
+            AUC scores are reported and, as shown, our method exceeds the previous state-of-the-art on most diseases.
+          </p>
+        </div>
+      </div> 
     
       <p><b>R3: CheXpert </b> </p>	
       <p><left>
