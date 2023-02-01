@@ -41,7 +41,7 @@
 		
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading><b></bold>Research</b></heading>
-	  <tr onmouseout="medklip_stop()" onmouseover="medklip_start()">
+	  <tr onmouseout="ld_stop()" onmouseover="ld_start()">
             <td style="padding:0px;width:25%;vertical-align:middle">
               <img src="image/MedKLIP.png" width="250" height="80" style="border-style: none">
             </td>
@@ -70,19 +70,21 @@
             </td>
             <td style="padding:10px;width:60%;vertical-align:middle">
               <a href="https://xiaoman-zhang.github.io/Layer-Decomposition/">
-                <papertitle>Self-supervised Tumor Segmentation through Layer Decomposition</papertitle>
+                <papertitle>Self-supervised Tumor Segmentation with Sim2Real Adaptation</papertitle>
               </a>
               <br>
               <strong>Xiaoman Zhang</strong>,
               <a href="https://weidixie.github.io/">Weidi Xie</a>,
               <a href="https://scholar.google.com/citations?user=BAZSE7wAAAAJ&hl=zh-CN">Chaoqin Huang</a>,
 	      <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
+	      <a>Xin Chen</a>,
+	      <a>Qi Tian</a>,
 	      <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
               <br>
 							<em>arXiv</em>, 2021 (under review)
-              <p>We propose a scalable pipeline for generating synthetic tumor data, 
-		      which enables to train our self-supervised model with minimal generalisation gap with the downstream task, 
-		      supporting zero-shot tumor segmentation </p>
+              <p>we propose a two-stage Sim2Real training regime for unsupervised tumor segmentation, 
+		where we first pre-train a model with simulated tumors, 
+		and then adopt a self-training strategy for downstream data adaptation.</p>
             </td>
 	 </tr> 
 		  
@@ -106,7 +108,6 @@
             </td>
           </tr> 
 
-	      
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
