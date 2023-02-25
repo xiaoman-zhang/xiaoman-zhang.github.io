@@ -83,7 +83,7 @@ Main Components
   z-index: 1;
   left: 0;
   top: 49px;
-  height: 2px;
+  height: 4px;
   /* width will be set using JavaScript */
   background: #dfdfdf;
   -webkit-transition: -webkit-transform 0.4s;
