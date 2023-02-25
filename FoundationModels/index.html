@@ -55,9 +55,8 @@
   pre.prettyprint > code {
     border: none;
   }
-
-  
- .timeline {
+	
+  .timeline {
   width:100%;
   max-width:800px;
   background:#fff;
@@ -78,41 +77,9 @@
     display: table;
     clear: both;
   } 
- } 
-	
-.entry {
-  clear: both;
-  text-align: left;
-  position: relative;
-  .title {
-    margin-bottom: .5em;
-    float: left;
-    width: 33%;
-    padding-right: $gutter;
-    text-align: right;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      width: $dot-diameter;
-      height: $dot-diameter;
-      border: $border-width solid salmon;
-      background-color:#fff;
-      border-radius:100%;
-      top: 15%;
-      right: -$dot-diameter;
-      z-index: 99;
-    }
-    h3 {
-      margin: 0;
-      font-size: 120%;
-    }
-    p {
-      margin: 0;
-      font-size: 100%;
-    }
-  }
-	
+ }
+
+
   .container {
         display: flex;
         align-items: center;
@@ -174,14 +141,6 @@
     font-size: 22px;
   }
 
-  $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
-
-$gutter: 30px;
-$border-width: 4px;
-$dot-diameter: 8px;
-
-}
-	
   .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
     box-shadow:
             0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
