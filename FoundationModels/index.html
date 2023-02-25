@@ -1,49 +1,176 @@
--->
-<html lang="en">
+<html>
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71156606-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    gtag('config', 'UA-71156606-1');
-  </script>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>OpenAI Research</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" type="text/css" href="https://openai.com/assets/styles/all.css?v=4d6024b720" />
-  <style>:root { --bg: 246, 246, 244;}</style>
+  <!--
+  <script src="./resources/jsapi" type="text/javascript"></script>
+  <script type="text/javascript" async>google.load("jquery", "1.3.2");</script>
+ -->
 
-  <script type="text/javascript">document.documentElement.className = 'js';</script>
-  <link rel="icon" type="image/svg+xml" href="https://openai.com/assets/images/favicon.svg?v=4d6024b720">
-  <link rel="mask-icon" href="https://openai.com/assets/images/mask-icon.svg?v=4d6024b720" color="#000000">
-  <link rel="icon" href="https://openai.com/content/images/size/w256h256/2020/09/icon-1.png" type="image/png" />
-    <link rel="canonical" href="https://openai.com/research/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    
-    <meta property="og:site_name" content="OpenAI" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="OpenAI Research" />
-    <meta property="og:description" content="OpenAI conducts fundamental, long-term research toward the creation of safe AGI." />
-    <meta property="og:url" content="https://openai.com/research/" />
-    <meta property="og:image" content="https://openai.com/content/images/2022/05/twitter-1.png" />
-    <meta property="article:published_time" content="2021-07-30T22:43:00.000Z" />
-    <meta property="article:modified_time" content="2021-08-14T00:09:37.000Z" />
-    <meta property="article:publisher" content="https://www.facebook.com/openai.research" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="OpenAI Research" />
-    <meta name="twitter:description" content="OpenAI conducts fundamental, long-term research toward the creation of safe AGI." />
-    <meta name="twitter:url" content="https://openai.com/research/" />
-    <meta name="twitter:image" content="https://openai.com/content/images/2022/05/twitter-1.png" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="OpenAI" />
-    <meta name="twitter:site" content="@openai" />
-    <meta property="og:image:width" content="3200" />
-    <meta property="og:image:height" content="1800" />
-    
-    <script type="application/ld+json">
+<style type="text/css">
+  @font-face {
+   font-family: 'Avenir Book';
+   src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+   }
 
+  body {
+    font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+  h1 {
+    font-weight:300;
+  }
+  h2 {
+    font-weight:300;
+  }
+
+  p {
+    font-weight:300;
+    line-height: 1.4;
+  }
+
+  code {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    background: #efefef;
+    border: 1px solid #d3d3d3;
+    color: #000000;
+    border-radius: 3px;
+  }
+
+  pre > code {
+    display: block;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  pre.prettyprint > code {
+    border: none;
+  }
+
+
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+  }
+  .image {
+        flex-basis: 40%
+  }
+  .text {
+        padding-left: 20px;
+        padding-right: 20px;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 0px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+
+	<title>KAD: Knowledge-enhanced auto-diagnosis of chest X-ray images</title>
 </head>
+
+<body>
+	<br>
+	<center>
+	<span style="font-size:36px">Medical Foundation Models</span><br><br><br>
+	</center>
+   <br>
+</body>
 </html>
