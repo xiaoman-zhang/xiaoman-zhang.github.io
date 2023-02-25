@@ -14,7 +14,7 @@
 	<span style="font-size:36px">Medical Foundation Models</span><br><br><br>
 	</center>
 	<center>
-	<span style="font-size:20px">CMIC, Shanghai Jiao Tong University &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shanghai AI Lab</span><br><br><br>
+	<span style="font-size:20px">Shanghai Jiao Tong University &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shanghai AI Lab</span><br><br><br>
   	</center>
    <br>
 	
@@ -45,7 +45,10 @@
 				<h2>MedKLIP</h2>
 				<em>Submitted to CVPR2023,under review</em>
 				<p>	
-				In this paper, we consider the problem of enhancing self-supervised visual-language pre-training (VLP) with medical-specific knowledge, by exploiting the paired image-text reports from the radiological daily practice.
+				MedKLIP is proposed to enhance self-supervised visual-language pre-training (VLP) with medical-specific knowledge, by exploiting the paired image-text reports from the radiological daily practice.
+				First, we propose a report filter to extract useful medical entities with more useful supervision signals, simplifying complex raw reports with minimal information loss. 
+					Second, we translate entities into detailed <b>medical descriptions</b> and embed them with a text encoder enabling the network to understand complex medical expert-level knowledge. 
+				Finally, a transformer-based structure is proposed to do local region alignment.
 				</p>
 				<p style="text-align:center">
 				<a href="https://chaoyi-wu.github.io/MedKLIP">Project page</a> &nbsp/&nbsp
@@ -58,7 +61,10 @@
 				<h2>K-Diag</h2>
 				<em>Submitted to MICCAI2023,under review</em>
 				<p>	
-				In this paper, we consider the problem of disease diagnosis. Unlike the conventional learning paradigm that treats labels independently, we propose a knowledge-enhanced framework, that enables training visual representation with the guidance of medical domain knowledge.
+				K-Diag is proposed for disease diagnosis. Unlike the conventional learning paradigm that treats labels independently, we propose a knowledge-enhanced framework, that enables training visual representation with the guidance of medical domain knowledge.
+				First, to explicitly incorporate experts' knowledge, we propose to learn a neural representation for the <b>medical knowledge graph</b> via contrastive learning, implicitly establishing relations between different medical concepts. 
+				Second, while training the visual encoder, we keep the parameters of the knowledge encoder frozen and propose to learn a set of prompt vectors for efficient adaptation. 
+				Third, we adopt a Transformer-based disease-query module for cross-model fusion, which naturally enables explainable diagnosis results via cross attention. 
 				</p>
 				<p style="text-align:center">
 				<a href="https://arxiv.org/abs/2302.11557">Project page</a> &nbsp/&nbsp
@@ -71,7 +77,7 @@
 				<h2>KAD</h2>
 				<em>Submitted to Nature Communication,under review</em>
 				<p>	
-				In this paper,we propose a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images. The algorithm, named as Knowledge-enhanced Auto Diagnosis (KAD), first trains a text encoder on an existing medical knowledge graph to embed knowledge about the concept definitions and concept relationships, and then leverages the pre-trained text encoder to enhance the image-text contrastive learning from paired chest X-rays and radiology reports. 
+				KAD is a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images. The algorithm, named as Knowledge-enhanced Auto Diagnosis (KAD), first trains a text encoder on an existing <b>medical knowledge graph</b> to embed knowledge about the <b>concept definitions</b> and <b>concept relationships</b>, and then leverages the pre-trained text encoder to enhance the image-text contrastive learning from paired chest X-rays and radiology reports. 
 				</p>
 				</p>
 				<p style="text-align:center">
