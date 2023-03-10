@@ -1,0 +1,92 @@
+<html>
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="mystyles.css">	
+</head>
+	
+<body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="script.js"></script>
+   <br>
+	<center>
+	<span style="font-size:36px">Medical Foundation Models</span><br><br><br>
+	</center>
+	<center>
+	<span style="font-size:20px">Shanghai Jiao Tong University &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Shanghai AI Lab</span><br><br><br>
+  	</center>
+   <br>
+	
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="50%" color=#8fbc8f SIZE=4>
+
+ <section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="01/01/2023" class="selected">MedKLIP</a></li>
+					<li><a href="#0" data-date="01/03/2023">K-Diag</a></li>
+					<li><a href="#0" data-date="01/05/2023">KAD</a></li>
+				</ol>
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="01/01/2023">
+				<h2>MedKLIP</h2>
+				<em>Submitted to CVPR2023,under review</em>
+				<p>	
+				MedKLIP is proposed to enhance self-supervised visual-language pre-training (VLP) with medical-specific knowledge, by exploiting the paired image-text reports from the radiological daily practice.
+				First, we propose a report filter to extract useful medical entities with more useful supervision signals, simplifying complex raw reports with minimal information loss. 
+					Second, we translate entities into detailed <b>medical descriptions</b> and embed them with a text encoder enabling the network to understand complex medical expert-level knowledge. 
+				Finally, a transformer-based structure is proposed to do local region alignment.
+				</p>
+				<p style="text-align:center">
+				<a href="https://chaoyi-wu.github.io/MedKLIP">Project page</a> &nbsp/&nbsp
+				<a href="https://github.com/MediaBrain-SJTU/MedKLIP">Github</a> &nbsp/&nbsp
+				<a href="https://arxiv.org/abs/2301.02228">Paper</a>
+			      </p>
+			</li>
+
+			<li data-date="01/03/2023">
+				<h2>K-Diag</h2>
+				<em>Submitted to MICCAI2023,under review</em>
+				<p>	
+				K-Diag is proposed for disease diagnosis. Unlike the conventional learning paradigm that treats labels independently, we propose a knowledge-enhanced framework, that enables training visual representation with the guidance of medical domain knowledge.
+				First, to explicitly incorporate experts' knowledge, we propose to learn a neural representation for the <b>medical knowledge graph</b> via contrastive learning, implicitly establishing relations between different medical concepts. 
+				Second, while training the visual encoder, we keep the parameters of the knowledge encoder frozen and propose to learn a set of prompt vectors for efficient adaptation. 
+				Third, we adopt a Transformer-based disease-query module for cross-model fusion, which naturally enables explainable diagnosis results via cross attention. 
+				</p>
+				<p style="text-align:center">
+				<a href="https://chaoyi-wu.github.io/K-Diag/">Project page</a> &nbsp/&nbsp
+				<a href="https://arxiv.org/abs/2302.11557">Github</a> &nbsp/&nbsp
+				<a href="https://arxiv.org/abs/2302.11557">Paper</a>
+			      </p>
+			</li>
+
+			<li data-date="01/05/2023">
+				<h2>KAD</h2>
+				<em>Submitted to Nature Communication,under review</em>
+				<p>	
+				KAD is a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images. The algorithm, named as Knowledge-enhanced Auto Diagnosis (KAD), first trains a text encoder on an existing <b>medical knowledge graph</b> to embed knowledge about the <b>concept definitions</b> and <b>concept relationships</b>, and then leverages the pre-trained text encoder to enhance the image-text contrastive learning from paired chest X-rays and radiology reports. 
+				</p>
+				<p style="text-align:center">
+				<a href="https://xiaoman-zhang.github.io/KAD">Project page</a> &nbsp/&nbsp
+				<a href="https://xiaoman-zhang.github.io/KAD">Github</a> &nbsp/&nbsp
+				<a href="https://arxiv.org/abs/2302.14042">Paper</a>
+			      </p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+ </body>
+</html>
