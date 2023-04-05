@@ -30,6 +30,22 @@ a {
 Main Components 
 
 -------------------------------- */
+
+#iaa8b{
+  padding:0px 400px 0px 400px;
+}
+
+.c4164{
+  font-size:24px;
+  border:0px solid black;
+  margin:0px 0px 0px 0;
+  padding:0px 400px 0px 400px;
+  background-color:#8fbc8f;
+}
+
+*{
+  box-sizing:border-box;
+}
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 2em auto;
@@ -408,3 +424,4 @@ Main Components
     transform: translateX(0%);
   }
 }
+
