@@ -35,7 +35,7 @@ Main Components
   padding:0px 400px 0px 400px;
 }
 #izf1{
-  padding:80px 0px 0px 0px;
+  padding:100px 0px 0px 0px;
   font-weight:800;
   background-image:none;
   background-repeat:repeat;
@@ -45,7 +45,7 @@ Main Components
   background-color:#dbe6da;
 }
 #i94lg{
-  padding:0px 0px 50px 0px;
+  padding:0px 0px 80px 0px;
   background-image:none;
   background-repeat:repeat;
   background-position:left top;
@@ -342,7 +342,7 @@ Main Components
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
   font-size: 2.2rem;
-  font-family: "Playfair Display", serif;
+/*   font-family: "Playfair Display", serif; */
   font-weight: 700;
   line-height: 1.2;
 }
