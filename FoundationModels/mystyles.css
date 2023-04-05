@@ -34,7 +34,32 @@ Main Components
 #iaa8b{
   padding:0px 400px 0px 400px;
 }
-
+#izf1{
+  padding:80px 0px 0px 0px;
+  font-weight:800;
+  background-image:none;
+  background-repeat:repeat;
+  background-position:left top;
+  background-attachment:scroll;
+  background-size:auto;
+  background-color:#dbe6da;
+}
+#i94lg{
+  padding:0px 0px 50px 0px;
+  background-image:none;
+  background-repeat:repeat;
+  background-position:left top;
+  background-attachment:scroll;
+  background-size:auto;
+  background-color:#dbe6da;
+}
+.c4011{
+  font-size:40px;
+}
+.c4074{
+  font-size:20px;
+  font-weight:500;
+}
 .c4164{
   font-size:24px;
   border:0px solid black;
