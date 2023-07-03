@@ -254,22 +254,16 @@
       <center><h2> Abstract </h2> </center>
       <p style="text-align:justify; text-justify:inter-ideograph;">
       <left>
-	Despite of the success of multi-modal foundation models pre-trained on large-scale data in natural language understanding and vision recognition, its counterpart in medical and clinical domains remains preliminary, due to the fine-grained recognition nature of the medical tasks with high demanding on domain knowledge. 
-	Here, we propose a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images.
-	The algorithm, named as Knowledge-enhanced Auto Diagnosis (KAD), first trains a text encoder on an existing medical knowledge graph to embed knowledge about the concept definitions and concept relationships, and then leverages the pre-trained text encoder to enhance the image-text contrastive learning from paired chest X-rays and radiology reports. 
-	We validate KAD on three external X-ray datasets. The zero-shot performance of KAD, is not only comparable to that of the fully-supervised models, but also, for the first time, superior to the average of three expert radiologists for three (out of five) pathologies with statistical significance. 
-	When few-shot annotation is available, KAD also surpasses all existing approaches in finetuning settings, demonstrating the potential for application in different clinical scenarios.
+        While multi-modal foundation models pre-trained on large-scale data have been successful in natural language understanding and vision recognition, their use in medical domains is still limited due to the fine-grained nature of medical tasks and the high demand for domain knowledge. 
+        To address this challenge, we propose an approach called Knowledge-enhanced Auto Diagnosis (KAD) which leverages existing medical domain knowledge to guide vision-language pre-training using paired chest X-rays and radiology reports. We evaluate KAD on four external X-ray datasets and demonstrate that its zero-shot performance is not only comparable to that of fully-supervised models, but also superior to the average of three expert radiologists for three (out of five) pathologies with statistical significance. 
+        Moreover, when few-shot annotation is available, KAD outperforms all existing approaches in fine-tuning settings, demonstrating its potential for application in different clinical scenarios.
       </left></p>
       
       <br><hr>
       <center> <h2> Architecture </h2> </center>
       <p style="text-align:justify; text-justify:inter-ideograph;">
       <left>
-      Overview of the KAD workflow. 
-      (a), Knowledge base used for training the text encoder. It contains two parts, knowledge graph consisting of concept-relation-concept triplets and concept info list consisting of concept-definition pairs.
-      (b), In the first stage, the text encoder is trained to learns textual representations by maximizing similarities between positive pairs.
-      (c), In the second stage, we employ the pre-trained text encoder to perform image-text contrastive learning with paired chest X-rays and entities extracted from the radiology reports and optimize a Disease Query Network (DQN) for classification.
-      (d), During the inference stage, we simply encode the disease name as a query input, and DQN will output the probability that the pathology is present in the input image.
+        Overview of the KAD workflow. {a}, Knowledge base used for training the knowledge encoder. It contains two parts, knowledge graph consisting of concept-relation-concept triplets and concept info list consisting of concept-definition pairs. {b}, The knowledge encoder is trained to learn textual representations by maximizing similarities between positive pairs. {c}, We first extract the clinical entities and relations from the radiology reports, this can be achieved by heuristic rules, using an off-the-shelf reports information extraction toolbox~(Entity Extraction), or ChatGPT, then we employ the pre-trained knowledge encoder to perform image-text contrastive learning with paired chest X-rays and extracted entities and optimize a Disease Query Network (DQN) for classification. {d}, During the inference stage, we simply encode the disease name as a query input, and DQN will output the probability that the pathology is present in the input image.
       </left></p>
       <p><img class="left"  src="./resources/KAD.png" width="800px"></p>
 	
@@ -277,9 +271,7 @@
       <center> <h2> Visualization </h2> </center>
       <p style="text-align:justify; text-justify:inter-ideograph;">
       <left>
-       Sample visualization of randomly chosen samples from NIH ChestXray14, we present both the original image (left) and an attention map generated from KAD (right). 
-       In the original images, red boxes denote lesion areas annotated by radiologists. 
-       In the attention maps, the red to blue spectrum are plot on the original image with red representing high attention regions and blue representing low attention.
+        Zero-shot visualization of randomly chosen samples from ChestX-Det10, we present both the original image (left) and attention maps generated from KAD, KAD-512, and KAD-1024. In the original images, red boxes denote lesion areas annotated by radiologists. In the attention maps, the red to blue spectrum is plot on the original image with red representing high-attention regions and blue representing low attention.
       </left></p>
       <p><img class="left"  src="./resources/visualize.png" width="800px"></p>
 	
@@ -287,37 +279,27 @@
       <center><h2>Results</h2></center>
       <p><b>R1: Padchest </b> </p>
       <p><left>
-	      Comparison of KAD with SOTA medical image-text pre-training models on unseen radiographic findings in the PadChest dataset.
-	      We evaluate model on the human-annotated subset of the PadChest dataset (n = 39,053 chest X-rays) and mean AUC and 95% CI of KAD are shown for each radiographic finding n > 50 labelled as high importance by an expert radiologist. 
-	      No labelled samples were seen during training for any of the radiographic findings in this dataset.
-	      KAD achieves an AUC of at least 0.900 on 8 findings  and at least 0.700 on 44 findings out of 57 radiographic findings where (n > 50) in the PadChest test dataset (n = 39,053).
+	      Comparison of KAD with SOTA medical image-text pre-training models under zero-shot setting on radiographic findings or diagnoses in the PadChest dataset. We evaluate model on the human-annotated subset of the PadChest dataset (n = 39,053 chest X-rays) and mean AUC and $95\%$ CI of KAD are shown for each radiographic finding or diagnosis (n > 50). a, Results of seen classes. Note that CheXNet is a supervised model trained on the PadChest dataset. b, Results of unseen classes. KAD achieves an AUC of at least 0.900 on 31 classes and at least 0.700 on 111 classes out of 177 unseen classes in the PadChest test dataset. Top 50 classes where (n > 50) in the test dataset (n = 39,053) are shown in the figure. 
       </left></p>
       <p><img class="center"  src="./resources/padchest.png" width="800px"></p>
 
       <p><b>R2: ChestXray14 </b> </p>	
       <p><left>
-	     Comparison of proposed KAD with SOTA self-supervised baseline models and medical image-text pre-training models on ChestXray14 with different ratio of labeled data used.
-	     AUC, F1 score are reported, and the metrics refer to the macro average on all the diseases. Note that for fairness, all baselines use the same backbone as the basic image encoder (that is, ResNet50). 
-	     The percentages refer to the percentage of labels used in the training data.
+        Comparison of proposed KAD with SOTA self-supervised baseline models and medical image-text pre-training models on ChestXray14 with different ratio of labeled data used for fine-tuning. AUC, F1 score are reported, and the metrics refer to the macro average on all the diseases. Note that for fairness, all baselines use the same backbone as the basic image encoder (that is, ResNet50). The percentages refer to the percentage of labels used in the training data.
       </left></p>
       <p><img class="center"  src="./resources/chestxray14.png" width="800px"></p>
-       <div class="container">
-        <div class="image" width="550px">
-          <center><p><img class="center"  src="./resources/radar.png" width="500px"></p></center>
-        </div>
-        <div class="text" width="250px"> 
-          <p> The radar figure of our method and other methods of 14 diseases on Chestx-ray14 datasets 
-            AUC scores are reported and, as shown, our method exceeds the previous state-of-the-art on most diseases.
-          </p>
-        </div>
-      </div> 
-    
+      
       <p><b>R3: CheXpert </b> </p>	
       <p><left>
-	    Comparisons of proposed KAD with SOTA medical image-text pre-training models and three board-certified radiologists on five competition pathologies in CheXpert dataset.
-	    The AUC, F1 scores and MCC of five pathologies are shown in the plots, where the average and 95% CI are shown. 
+        Comparisons of proposed KAD with SOTA medical image-text pre-training models and three board-certified radiologists on five competition pathologies in CheXpert test dataset (n=500). Note that, all models are directly evaluated on CheXpert dataset under zero-shot setting. The AUC, F1 scores and MCC of five pathologies are shown in the plots, where the average and 95% CI are shown.
       </left></p>
       <p><img class="center"  src="./resources/chexpert.png" width="800px"></p>
+
+      <p><b>R4: ChestX-Det10 </b> </p>	
+      <p><left>
+        Comparisons of proposed KAD with SOTA medical image-text pre-training models on ChestX-Det10 dataset. AUC scores are shown for the zero-shot classification task in (a), and Pointing game scores are shown for the zero-shot grounding task in (b). We use the best results as the maximum value for each category in the radar chart, and 0.5 as the minimal value for (a), 0 as the minimal value for (b).
+      </left></p>
+      <p><img class="center"  src="./resources/radar.png" width="800px"></p>
     
       <br>
       <hr>

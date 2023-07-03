@@ -1,5 +1,5 @@
 @article{zhang2023knowledge,
-  title={Knowledge-enhanced Pre-training for Auto-diagnosis of Chest Radiology Images},
+  title={Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images},
   author={Zhang, Xiaoman and Wu, Chaoyi and Zhang, Ya and Wang, Yanfeng and Xie, Weidi},
   journal={arXiv preprint arXiv:2302.14042},
   year={2023}
