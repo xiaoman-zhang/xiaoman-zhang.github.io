@@ -138,3 +138,8 @@ span.highlight {
   padding: 20px;
   box-sizing: border-box;
 }
+
+.spaced-row {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  display: table-row; /* Ensure the display property is set to table-row for <tr> */
+}
