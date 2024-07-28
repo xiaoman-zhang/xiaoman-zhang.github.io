@@ -130,14 +130,14 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.news-container {
-  width: 100%;
-  max-height: 200px; /* Adjust the height as needed */
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-sizing: border-box;
-}
+/* .news-container { */
+  /* width: 100%; */
+  /* max-height: 200px; Adjust the height as needed */
+  /* overflow-y: auto; */
+  /* border: 1px solid #ccc; */
+  /* padding: 20px; */
+  /* box-sizing: border-box; */
+/* } */
 
 .spaced-row {
   margin-bottom: 10px; /* Adjust the margin as needed */
