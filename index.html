@@ -7,6 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    .publication {
+      margin-bottom: 1.5rem;
+    }
+    .title {
+      font-weight: bold;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .authors {
+      margin: 0.25rem 0;
+    }
+    .venue {
+      font-style: italic;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -53,422 +72,61 @@
           </p>
         </div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="width:100%;vertical-align:middle">
-              <!-- padding:20px; -->
-              <h2>Research</h2>
-              <p style="margin-bottom:10px;">
-                Representative papers are <span class="highlight">highlighted</span>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
-          <tr onmouseout="ld_stop()" onmouseover="ld_start()" bgcolor="#ffffd0" class="spaced-row">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/AutoRG-Brain.png" width="320" height="180" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2407.16684">
-                <papertitle>AutoRG-Brain: Grounded Report Generation for Brain MRI</papertitle>
-              </a>
-              <br>
-              <a>Jiayu Lei</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a>Chaoyi Wu</a>,
-              <a>Lisong Dai</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a>Yanyong Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a>Yuehua Li</a>,
-              <br>
-              <em>Technical Report, 2024.</em><br>
-              In this paper, we target grounded Automatic Report Generation (AutoRG) for brain MRI. We release RadGenom-Brain MRI, a comprehensive dataset encompassing segmentation masks of anomaly regions and manually authored report. We propose AutoRG-Brain, the first brain MRI report generation system with pixel-level grounded visual clues.
-            </td>
-	    </tr> 
+        <h2>Selected Research (<a href="https://scholar.google.com.hk/citations?user=Zno4WggAAAAJ&hl=en" style="text-decoration: none; color: #2563eb;">Full Publication List</a>)</h2>
 
-      <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-        <td style="padding:0px;width:40%;vertical-align:middle">
-          <img src="image/RadGenome_ChestCT1.png" width="320" height="180" style="border-style: none">
-        </td>
-        <td style="padding:10px;width:60%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2404.16754">
-            <papertitle>RadGenome-Chest CT: A Grounded Vision-Language Dataset for Chest CT Analysis</papertitle>
-          </a>
-          <br>
-          <strong>Xiaoman Zhang</strong>,
-          <a>Chaoyi Wu</a>,
-          <a>Ziheng Zhao</a>,
-          <a>Jiayu Lei</a>,
-          <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-          <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-          <a href="https://weidixie.github.io/">Weidi Xie</a>
-          <br>
-          <em>Technical Report, 2024.</em><br>
-          In this paper, we introduce RadGenome-Chest CT, a comprehensive, large-scale, region-guided 3D chest CT interpretation dataset based on CT-RATE.  It includes: Organ-level segmentation for 197 categories; 665K multi-granularity grounded reports; 1.3M grounded VQA pairs.
-        </td>
-    </tr> 
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2407.16684" class="title">AutoRG-Brain: Grounded Report Generation for Brain MRI</a><br>
+          <div class="authors">Jiayu Lei, <span class="highlight">Xiaoman Zhang</span>, Chaoyi Wu, Lisong Dai, Ya Zhang, Yanyong Zhang, Yanfeng Wang, Weidi Xie, Yuehua Li</div>
+          <div class="venue">Technical Report, 2024</div>
+        </div>
 
-    <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-      <td style="padding:0px;width:25%;vertical-align:middle">
-        <img src="image/RaTEScore.png" width="320" height="120" style="border-style: none">
-      </td>
-      <td style="padding:10px;width:75%;vertical-align:middle">
-        <a href="https://www.medrxiv.org/content/medrxiv/early/2024/06/24/2024.06.24.24309405.full.pdf">
-          <papertitle>RaTEScore: A Metric for Radiology Report Generation</papertitle>
-        </a>
-        <br>
-        <a>Weike Zhao</a>,
-        <a>Chaoyi Wu</a>,
-        <strong>Xiaoman Zhang</strong>,
-        <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-        <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-        <a href="https://weidixie.github.io/">Weidi Xie</a>,
-        <br>
-        <em>Technical Report, 2024.</em><br>
-        In this paper, we introduce a novel, entity-aware metric, termed as Radiological Report (Text) Evaluation (RaTEScore), to assess the quality of medical reports generated by AI models. We developed a comprehensive medical NER dataset, RaTE-NER, and trained an NER model specifically for crucial medical entities.
-        purpose
-      </td>
-  </tr>
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/KEP.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2404.09942v1.pdf">
-                <papertitle>Knowledge-enhanced Visual-Language Pretraining for Computational Pathology</papertitle>
-              </a>
-              <br>
-              <a>Xiao Zhou</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a>Chaoyi Wu</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>ECCV, 2024.</em><br>
-              In this paper, we consider the problem of visual representation learning for computational pathology, by exploiting large-scale image-text pairs gathered from public resources, along with the domain specific knowledge in pathology. We curate a pathology knowledge tree that consists of 50,470 informative attributes for 4,718 diseases requiring pathology diagnosis from 32 human tissues, and develop a knowledge-enhanced visual-language pretraining approach.
-            </td>
-        </tr>
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2404.16754" class="title">RadGenome-Chest CT: A Grounded Vision-Language Dataset for Chest CT Analysis</a><br>
+          <div class="authors"><span class="highlight">Xiaoman Zhang</span>, Chaoyi Wu, Ziheng Zhao, Jiayu Lei, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
+          <div class="venue">Technical Report, 2024</div>
+        </div>
 
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/MMedLM.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2402.13963.pdf">
-                <papertitle>Towards Building Multilingual Language Model for Medicine</papertitle>
-              </a>
-              <br>
-              <a>Pengcheng Qiu*</a>,
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a>Weixiong Lin</a>,
-              <a>Haicheng Wang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Nature Communications, 2024.</em><br>
-                In this paper,  we construct a new multilingual medical corpus, that contains approximately 25.5B tokens encompassing 6 main languages, termed as MMedC. We propose a new multilingual medical multi-choice question-answering benchmark with rationale, termed as MMedBench.  Our final model, termed as MMedLM 2, with only 7B parameters, achieves superior performance compared to all other open-source models, even rivaling GPT-4 on MMedBench.
-            </td>
-        </tr>
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/SAT.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2312.17183.pdf">
-                <papertitle>One Model to Rule them All: Towards Universal Segmentation for Medical Images with Text Prompts</papertitle>
-              </a>
-              <br>
-              <a>Ziheng Zhao</a>,
-              <a>Yao Zhang</a>,
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2024.</em><br>
-                In this paper, we build a large-scale segmentation dataset by collecting over 11K 3D medical image scans from 31 segmentation datasets (SAT-DS),  and a model that can Segment Anything in medical scenarios, driven by Text prompts, termed as <strong>SAT</strong>. The datasets and model will continue update in the future, stay tuned!
-            </td>
-      </tr>
+        <div class="publication">
+          <a href="https://www.medrxiv.org/content/medrxiv/early/2024/06/24/2024.06.24.24309405.full.pdf" class="title">RaTEScore: A Metric for Radiology Report Generation</a><br>
+          <div class="authors">Weike Zhao, Chaoyi Wu, <span class="highlight">Xiaoman Zhang</span>, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
+          <div class="venue">Technical Report, 2024</div>
+        </div>
 
-      <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/RP3D-Diag.png" width="320" height="150" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2312.16151.pdf">
-                <papertitle>Large-scale Long-tailed Disease Diagnosis on Radiology Images</papertitle>
-              </a>
-              <br>
-              <a>Qiaoyu Zheng<sup>*</sup></a>,
-              <a>Weike Zhao<sup>*</sup></a>,
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu<sup>*</sup></a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-                In this paper, we collect a large-scale multi-modal, multi-scan, long-tailed muti-lable diagnosis (classification) dataset. We further propose a vision-encoder together with a fusion module, enabling arbitary scan input per case. On evaluation, our methods achive better experiment results on our benchmark and can also serve as an pre-train mdoel for external datasets.
-            </td>
-          </tr>
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2404.09942v1.pdf" class="title">Knowledge-enhanced Visual-Language Pretraining for Computational Pathology</a><br>
+          <div class="authors">Xiao Zhou, <span class="highlight">Xiaoman Zhang</span>, Chaoyi Wu, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
+          <div class="venue">ECCV, 2024</div>
+        </div>
 
-	 <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/GPT4V_eval.png" width="320" height="180" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/file/d/1kPDWgwpv8XlLu5sBuO2mRyylp0PDD6j5/view">
-                <papertitle>Can GPT-4V(ision) Serve Medical Applications ? Case Studies on GPT-4V for Multimodal Medical Diagnosis</papertitle>
-              </a>
-	      <br>
-	      <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-	      <a>Jiayu Lei*</a>,
-	      <a>Qiaoyu Zheng*</a>,
-	      <a>Weike Zhao*</a>,
-	      <a>Weixiongt Lin*</a>,
-              <strong>Xiaoman Zhang*</strong>,
-	      <a>Xiao Zhou*</a>,
-	      <a>Ziheng Zhao*</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-              We present recent efforts on assessing GPT-4V for multimodal medical diagnosis, by case studies, covering 17 human body systems, across 8 clinical imaging modalities, e.g., radiology, pathology.
-            </td>
-          </tr>
-  
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/UniBrain.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2309.06828.pdf">
-                <papertitle>UniBrain: Universal Brain MRI Diagnosis with Hierarchical Knowledge-enhanced Pre-training</papertitle>
-              </a>
-              <br>
-	      <a>Jiayu Lei</a>,
-	      <a>Lisong Dai</a>,
-	      <a>Haoyun Jiang</a>,
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a>Yao Zhang</a>,
-              <a>Jiangchao Yao</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a>Yanyong Zhang</a>,
-              <a>Yuehua Li</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-              In this paper, we propose a hierarchical knowledge-enhanced pre-training framework for the universal brain MRI diagnosis, termed as UniBrain. Specifically, UniBrain leverages a large-scale dataset of 24,770 imaging-report pairs from routine diagnostics.
-            </td>
-          </tr>
-		
-          
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/RadFM.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://chaoyi-wu.github.io/RadFM/">
-                <papertitle>Towards Generalist Foundation Model for Radiology</papertitle>
-              </a>
-              <br>
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-              <strong>Xiaoman Zhang*</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-              In this paper, we have constructed a complete set of medical foundation model-building processes, including data collection, problem formulation, model design, training, and evaluation. We construct the largest medical multi-modal database in this paper and in model capabilities, compared to existing work, our model is able to process multiple 3D or 2D image inputs interleaved with texts, which fits the practical usage more. We surpass the latest open-source multi-modal foundation model significantly.
-            </td>
-          </tr>
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2402.13963.pdf" class="title">Towards Building Multilingual Language Model for Medicine</a><br>
+          <div class="authors">Pengcheng Qiu*, Chaoyi Wu*, <span class="highlight">Xiaoman Zhang</span>, Weixiong Lin, Haicheng Wang, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
+          <div class="venue">Nature Communications, 2024</div>
+        </div>
 
-        <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/PMC-VQA.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://xiaoman-zhang.github.io/PMC-VQA">
-                <papertitle>PMC-VQA: Visual Instruction Tuning for Medical Visual Question Answering</papertitle>
-              </a>
-              <br>
-              <strong>Xiaoman Zhang*</strong>,
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-              <a>Ziheng Zhao</a>,
-	          <a>Weixiong Lin</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-              In this paper, we introduce PMC-VQA, a large-scale medical visual question-answering dataset, which contains 227k VQA pairs of 149k images that cover various modalities or diseases.
-            </td>
-          </tr>
+        <div class="publication">
+          <a href="https://xiaoman-zhang.github.io/KAD/" class="title">Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images</a><br>
+          <div class="authors"><span class="highlight">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+          <div class="venue">Nature Communications, 2023</div>
+        </div>
 
-	  <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/PMC-LLaMA.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2304.14454.pdf">
-                <papertitle>PMC-LLaMA: Towards Building Open-source Language Models for Medicine</papertitle>
-              </a>
-              <br>
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-	      <a>Weixiong Lin*</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>Technical Report, 2023.</em><br>
-              In this report, we systematically investigate the process of adapting a general-purpose foundation language model towards medical domain, this involves data-centric knowledge injection through the integration of 4.8M biomedical academic papers and 30K medical textbooks, as well as comprehensive fine-tuning for alignment with domain-specific instructions.
-            </td>
-          </tr>
-	  
-	      
-	   <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:25%;vertical-align:middle">
-              <img src="image/PMC_CLIP.png" width="320" height="100" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2303.07240">
-                <papertitle>PMC-CLIP: Contrastive Language-Image Pre-training using Biomedical Documents</papertitle>
-              </a>
-              <br>
-              <a>Weixiong Lin*</a>,
-              <a>Ziheng Zhao*</a>,
-              <strong>Xiaoman Zhang</strong>,
-	      <a href="https://chaoyi-wu.github.io/">Chaoyi Wu</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>MICCAI</em>, 2023 <br>
-              We collect a biomedical dataset, PMC-OA with <strong>1.6M</strong> image-caption pairs collected from PubMedCentral's OpenAccess subset.
-            </td>
-          </tr>
-	  
-	    <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/KAD.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://xiaoman-zhang.github.io/KAD/">
-                <papertitle>Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images
-              </a>
-              <br>
-              <strong>Xiaoman Zhang</strong>,
-	      <a href="https://chaoyi-wu.github.io/">Chaoyi Wu</a>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em> <strong> Nature Communications</strong> </em>, 2023.  (Impact Factor: ~18) <br> 
-              In this paper, we propose a knowledge-enhanced vision-language pre-training approach for auto-diagnosis on chest X-ray images. The algorithm, named Knowledge-enhanced Auto Diagnosis (KAD), first trains a knowledge encoder based on an existing medical knowledge graph, and then leverages the pre-trained knowledge encoder to guide the visual representation learning with paired chest X-rays and radiology reports. 
-            </td>
-	  </tr> 
-	      
-	   <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/K-Diag.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://chaoyi-wu.github.io/K-Diag/">
-                <papertitle>K-Diag: Knowledge-enhanced Disease Diagnosis in Radiographic Imaging</papertitle>
-              </a>
-              <br>
-              <a href="https://chaoyi-wu.github.io/">Chaoyi Wu*</a>,
-              <strong>Xiaoman Zhang*</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>MICCAI Big Task Small Data Workshop</em>, 2023 &nbsp <font color="black"><strong>(Oral)</strong></font><br> 
-              In this paper, we consider the problem of disease diagnosis. Unlike the conventional learning paradigm that treats labels independently, we propose a knowledge-enhanced framework, that enables training visual representation with the guidance of medical domain knowledge.
-            </td>
-	  </tr> 
-	     
-	  <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/MedKLIP.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://chaoyi-wu.github.io/MedKLIP/">
-                <papertitle>MedKLIP: Medical Knowledge Enhanced Language-Image Pre-Training in Radiology</papertitle>
-              </a>
-              <br>
-	      <a href="https://chaoyi-wu.github.io/">Chaoyi Wu</a>,
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>
-              <br>
-              <em>ICCV</em>, 2023   
-	      <br>
-              We propose to leverage medical specific knowledge enhancing language-image pre-training method, significantly advancing the ability of pre-trained models to handle unseen diseases on zero-shot classification and grounding tasks.
-          </td>
-	 </tr> 
-	  
-	  <tr onmouseout="ld_stop()" onmouseover="ld_start()">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/LD.png" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://xiaoman-zhang.github.io/Layer-Decomposition/">
-                <papertitle>Self-supervised Tumor Segmentation with Sim2Real Adaptation</papertitle>
-              </a>
-              <br>
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://weidixie.github.io/">Weidi Xie</a>,
-              <a href="https://scholar.google.com/citations?user=BAZSE7wAAAAJ&hl=zh-CN">Chaoqin Huang</a>,
-	      <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>,
-	      <a>Xin Chen</a>,
-	      <a>Qi Tian</a>,
-	      <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>
-              <br>
-	      <em> IEEE Journal of Biomedical and Health Informatics</em>, 2023   
-	      <br>
-              we propose a two-stage Sim2Real training regime for unsupervised tumor segmentation, 
-		where we first pre-train a model with simulated tumors, 
-		and then adopt a self-training strategy for downstream data adaptation. 
-            </td>
-	 </tr> 
-		  
-	  <tr onmouseout="sar_stop()" onmouseover="sar_start()">
-            <td style="padding:0px;width:40%;vertical-align:middle">
-              <img src="image/SAR.jpg" width="320" height="120" style="border-style: none">
-            </td>
-            <td style="padding:10px;width:60%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2010.06107/">
-                <papertitle>SAR: Scale-Aware Restoration Learning for 3D Tumor Segmentation</papertitle>
-              </a>
-              <br>
-              <strong>Xiaoman Zhang</strong>,
-              <a href="https://scholar.google.com/citations?hl=en&user=Yo-RbKIAAAAJ">Shixiang Feng</a>,
-              <a href="https://scholar.google.com/citations?hl=en&user=9WvLlkIAAAAJ">Yuhang Zhou</a>,
-	      <a href="https://mediabrain.sjtu.edu.cn/members/">Yanfeng Wang </a>,
-              <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Ya Zhang</a>
-              <br>
-							<em>MICCAI</em>, 2021
-              <p></p>
-            </td>
-          </tr> 
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2303.07240" class="title">PMC-CLIP: Contrastive Language-Image Pre-training using Biomedical Documents</a><br>
+          <div class="authors">Weixiong Lin*, Ziheng Zhao*, <span class="highlight">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+          <div class="venue">MICCAI, 2023</div>
+        </div>
 
-	      
-        </tbody></table>
+        <div class="publication">
+          <a href="https://chaoyi-wu.github.io/MedKLIP/" class="title">MedKLIP: Medical Knowledge Enhanced Language-Image Pre-Training in Radiology</a><br>
+          <div class="authors">Chaoyi Wu, <span class="highlight">Xiaoman Zhang</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+          <div class="venue">ICCV, 2023</div>
+        </div>
+
+        <div class="publication">
+          <a href="https://arxiv.org/abs/2010.06107/" class="title">SAR: Scale-Aware Restoration Learning for 3D Tumor Segmentation</a><br>
+          <div class="authors"><span class="highlight">Xiaoman Zhang</span>, Shixiang Feng, Yuhang Zhou, Yanfeng Wang, Ya Zhang</div>
+          <div class="venue">MICCAI, 2021</div>
+        </div>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
