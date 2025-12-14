@@ -13,7 +13,7 @@
     }
     .title {
       font-weight: bold;
-      color: black;
+      color: mediumpurple;
       text-decoration: none;
     }
     .authors {
@@ -63,11 +63,13 @@
         <div>
           <h2>Recent News</h2>
           <p>
+            [12/2025] <a href="https://arxiv.org/pdf/2407.16684">1 paper</a> has been accepted by JBHI.<br>
+            [12/2025] <a href="https://arxiv.org/pdf/2506.204305"></a>1 paper</a> has been accepted by Nature.<br>
             [11/2025] 1 paper has been accepted by NEJM AI.<br>
             [11/2025] <a href="https://arxiv.org/pdf/2505.00228">1 paper</a> has been accepted by  <a href="https://ahli.cc/ml4h/">Machine Learning for Health (ML4H) 2025</a>.<br>
             [09/2025] <a href="https://pubs.rsna.org/doi/abs/10.1148/radiol.242362?journalCode=radiology4">1 paper</a> has been accepted by Radiology.<br>
             [09/2025] 3 papers have been accepted by  <a href="https://psb.stanford.edu/">Pacific Symposium on Biocomputing (PSB) 2026</a>.<br>
-            [09/2025] 2 abstracts have been accepted by <a href="https://www.rsna.org/rsnai">2025 RSNA Cutting-Edge Research Abstracts</a>. See you in <span style="color: #ff9900; font-weight: bold; text-shadow: 0 0 8px #ffd700, 0 0 12px #ff9900;">Chicago!</span><br>
+            [09/2025] 2 abstracts have been accepted by <a href="https://www.rsna.org/rsnai">2025 RSNA Cutting-Edge Research Abstracts</a>.<br>
             [09/2025] <a href="https://arxiv.org/pdf/2404.16754">1 paper</a> has been accepted by Nature Scientific Data.<br>
             [08/2025] <a href="https://www.nature.com/articles/s41746-025-01964-w">1 paper</a> has been accepted by npj Digital Medicine.<br>
             [06/2025] <a href="https://huggingface.co/datasets/rajpurkarlab/ReXVQA">ReXVQA</a>, a large-scale, high quality question answering benchmark for chest X-rays, is released.<br>
@@ -79,23 +81,38 @@
             [02/2025] <a href="https://arxiv.org/pdf/2309.06828">1 paper</a> has been accepted by CMIG.<br>
             [01/2025] <a href="https://arxiv.org/pdf/2410.00441?">1 abstract</a> has been selected as Oral Presentation at SIIM 2025.<br>
             [01/2025] 2 papers has been accepted by AAAI Bridge Program AIMedHealth (<a href="https://arxiv.org/pdf/2410.00441?">1 paper</a> with Best Paper Award).<br>
-            [11/2024] <a href="https://arxiv.org/pdf/2305.10415">1 paper</a> has been accepted by Communications Medicine.<br>
+            <!-- [11/2024] <a href="https://arxiv.org/pdf/2305.10415">1 paper</a> has been accepted by Communications Medicine.<br>
             [09/2024] <a href="https://www.nature.com/articles/s41467-024-54424-6">1 paper</a> has been accepted by Nature Communications.<br>
             [09/2024] <a href="https://aclanthology.org/2024.emnlp-main.836.pdf">1 paper</a> has been accepted by EMNLP.<br>
             [07/2024] <a href="https://rexrank.ai">ReXrank</a>, a leaderboard for chest X-ray interpretation, is released.<br>
             [07/2024] <a href="https://www.nature.com/articles/s41467-024-52417-z">1 paper</a> has been accepted by Nature Communications.<br>
-            [07/2024] <a href="https://arxiv.org/pdf/2404.09942v1.pdf">1 paper</a> has been accepted by ECCV 2024(Oral).<br>
+            [07/2024] <a href="https://arxiv.org/pdf/2404.09942v1.pdf">1 paper</a> has been accepted by ECCV 2024(Oral).<br> -->
           </p>
         </div>
 
         <h2>Selected Research</h2>
-
+        <h3>Datasets &amp; Benchmarks</h3>
+        <ul>
+          <li><a href="https://huggingface.co/datasets/RadGenome/PMC-VQA">PMC-VQA</a></li>
+          <li><a href="https://huggingface.co/datasets/RadGenome/RadGenome-ChestCT">RadGenome-ChestCT</a></li>
+          <li><a href="https://huggingface.co/datasets/rajpurkarlab/ReXGradient-160K">ReXGradient-160K</a></li>
+          <li><a href="https://huggingface.co/datasets/rajpurkarlab/ReXVQA">ReXVQA</a></li>
+          <li><a href="https://huggingface.co/datasets/rajpurkarlab/3DReasonKnee">3DReasonKnee</a></li>
+          <li><a href="https://huggingface.co/datasets/rajpurkarlab/ReXGroundingCT">ReXGroundingCT</a></li>
+        </ul>
+        
+        <!-- 
         <div class="publication"> 
           <a href="https://arxiv.org/pdf/2410.00441?" class="title">ReXplain: Translating Radiology into Patient-Friendly Video Reports</a><br>
           <div class="authors">Luyang Luo, Jenanan Vairavamurthn, <span class="highlight_author">Xiaoman Zhang</span>, Abhinav Kumar, Ramon R. Ter-Oganesyan, Stuart T. Schrof, Dan Shilo, Rydhwana Hossain, Mike Moritz, Pranav Rajpurkar</div>
           <div class="venue">AAAI Bridge Program - AIMedHealth, 2025 (Best Paper)</div>
-        </div>
+        </div> -->
 
+        <div class="publication">
+          <a href="https://arxiv.org/pdf/2507.22030" class="title">ReXGroundingCT: A 3D Chest CT Dataset for Segmentation of Findings from Free-Text Reports</a><br>
+          <div class="authors">Mohammed Baharoon, Luyang Luo, Michael Moritz, Abhinav Kumar, Sung Eun Kim, <span class="highlight_author">Xiaoman Zhang</span>, Miao Zhu, Mahmoud Hussain Alabbad, Maha Sbayel Alhazmi, Neel P. Mistry, Lucas Bijnens, Kent Ryan Kleinschmidt, Brady Chrisler, Sathvik Suryadevara, Sri Sai Dinesh Jaliparthi, Noah Michael Prudlo, Mark David Marino, Jeremy Palacio, Rithvik Akula, Di Zhou, Hong-Yu Zhou, Ibrahim Ethem Hamamci, Scott J. Adams, Hassan Rayhan AlOmaish, Pranav Rajpurkar</div>
+          <div class="venue">Technical Report, 2025</div>
+        </div>
 
         <div class="publication"> 
           <a href="https://arxiv.org/pdf/2411.18672" class="title">FactCheXcker: Mitigating Measurement Hallucinations in Chest X-ray Report Generation Models</a><br>
@@ -112,7 +129,7 @@
         <div class="publication">
           <a href="https://arxiv.org/pdf/2407.16684" class="title">AutoRG-Brain: Grounded Report Generation for Brain MRI</a><br>
           <div class="authors">Jiayu Lei, <span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Lisong Dai, Ya Zhang, Yanyong Zhang, Yanfeng Wang, Weidi Xie, Yuehua Li</div>
-          <div class="venue">Technical Report, 2024</div>
+          <div class="venue">JBHI, 2025</div>
         </div>
 
         <div class="publication">
@@ -127,11 +144,11 @@
           <div class="venue">npj Digital Medicine, 2025</div>
         </div>
 
-        <div class="publication">
+        <!-- <div class="publication">
           <a href="https://www.medrxiv.org/content/medrxiv/early/2024/06/24/2024.06.24.24309405.full.pdf" class="title">RaTEScore: A Metric for Radiology Report Generation</a><br>
           <div class="authors">Weike Zhao, Chaoyi Wu, <span class="highlight_author">Xiaoman Zhang</span>, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
           <div class="venue">EMNLP, 2024</div>
-        </div>
+        </div> -->
 
         <div class="publication">
           <a href="https://arxiv.org/pdf/2404.09942v1.pdf" class="title">Knowledge-enhanced Visual-Language Pretraining for Computational Pathology</a><br>
@@ -164,22 +181,22 @@
         </div>
 
         <div class="publication">
-          <a href="https://xiaoman-zhang.github.io/KAD/" class="title">Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images</a><br>
-          <div class="authors"><span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Nature Communications, 2023</div>
-        </div>
-
-        <div class="publication">
           <a href="https://arxiv.org/pdf/2303.07240" class="title">PMC-CLIP: Contrastive Language-Image Pre-training using Biomedical Documents</a><br>
           <div class="authors">Weixiong Lin*, Ziheng Zhao*, <span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
           <div class="venue">MICCAI, 2023 (Final List of MICCAI Young Scientist Publication Impact Award)</div>
         </div>
 
         <div class="publication">
+          <a href="https://xiaoman-zhang.github.io/KAD/" class="title">Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images</a><br>
+          <div class="authors"><span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+          <div class="venue">Nature Communications, 2023</div>
+        </div>
+<!-- 
+        <div class="publication">
           <a href="https://chaoyi-wu.github.io/MedKLIP/" class="title">MedKLIP: Medical Knowledge Enhanced Language-Image Pre-Training in Radiology</a><br>
           <div class="authors">Chaoyi Wu, <span class="highlight_author">Xiaoman Zhang</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
           <div class="venue">ICCV, 2023</div>
-        </div>
+        </div> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
