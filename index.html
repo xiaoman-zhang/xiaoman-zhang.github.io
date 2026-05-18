@@ -1,5 +1,5 @@
 
-<!DYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <base target="_blank" rel="noopener noreferrer">
   <title>Xiaoman Zhang</title>
@@ -7,14 +7,31 @@
   <meta name="author" content="Xiaoman Zhang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=3">
   <style>
-    .publication {
-      margin-bottom: 1.5rem;
+    .pub-table {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: separate;
+      margin-bottom: 1.25rem;
+    }
+    .pub-img-cell {
+      width: 240px;
+      vertical-align: middle;
+      padding: 10px 20px 10px 0;
+      text-align: center;
+    }
+    .pub-img-cell img {
+      width: 240px;
+      max-width: 240px;
+      border-radius: 4px;
+    }
+    .pub-text-cell {
+      vertical-align: middle;
+      padding: 10px 0;
     }
     .title {
       font-weight: bold;
-      /* color: mediumpurple; */
       text-decoration: none;
     }
     .authors {
@@ -30,10 +47,26 @@
       display: block;
       margin-bottom: 0.35rem;
     }
+    .research-subheading {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 1.2rem 0 0.6rem 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #eee;
+    }
+    .full-pubs-link {
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .abstract {
+      margin-top: 0.4rem;
+      color: #444;
+      line-height: 1.45;
+    }
   </style>
 </head>
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -42,15 +75,19 @@
               <p style="text-align:center">
                 <name> Xiaoman Zhang (张小嫚) </name>
               </p>
-              <p> 
-                Hi, I am a postdoctoral fellow at Harvard University in the Department of Biomedical Informatics, working with <a href="https://pranavrajpurkar.com/">Prof. Pranav Rajpurkar</a>. </p>
-                <p>  
-                I received my PhD in Shanghai Jiao Tong Universiy, advised by <a href="https://weidixie.github.io/">Prof. Weidi Xie</a> and <a href="https://mediabrain.sjtu.edu.cn/yazhang/">Prof. Ya Zhang</a>.
-		            I received my bachelor degree from School for the Gifted Young, University of Science and Technology of China in June 2019. 
+              <p>
+                Hi, I am a postdoctoral fellow at Harvard University in the Department of Biomedical Informatics, working with <a href="https://pranavrajpurkar.com/">Prof. Pranav Rajpurkar</a>.
+                I will join <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a> as an Associate Professor in July 2026.
               </p>
-              <p> 
-                My research interest focuses on Artificial Intelligence for Healthcare (AI4Health), with the ultimate goal of developing a generalist medical AI system. I am also intereated in AI for scientific discovery, with application across biology, chemistry, and medicine.
-	      </p>                   
+              <p>
+                Previously, I completed my Ph.D. at Shanghai Jiao Tong University and my B.S. from the School for the Gifted Young, University of Science and Technology of China.
+              </p>
+              <p>
+                I am interested in building predictive AI models of the cell &mdash; closed-loop with simulation and experiment &mdash; to accelerate the discovery of new medicines and narrow the gap between biology and patient impact.
+	      </p>
+              <p>
+                <strong>I am currently recruiting PhD students for 2027.</strong> If you are interested, please see <a href="contact.html" target="_self">this page</a>.
+              </p>
               <p style="text-align:center">
                 <!-- <a href="mailto:xiaomanzhang.zxm@gmail.com">Email</a> &nbsp;/&nbsp; -->
                 <a href="https://scholar.google.com/citations?user=Zno4WggAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
@@ -115,120 +152,70 @@
         </div>
 
         <h2>Selected Research</h2>
-        <!-- 
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2410.00441?" class="title">ReXplain: Translating Radiology into Patient-Friendly Video Reports</a><br>
-          <div class="authors">Luyang Luo, Jenanan Vairavamurthn, <span class="highlight_author">Xiaoman Zhang</span>, Abhinav Kumar, Ramon R. Ter-Oganesyan, Stuart T. Schrof, Dan Shilo, Rydhwana Hossain, Mike Moritz, Pranav Rajpurkar</div>
-          <div class="venue">AAAI Bridge Program - AIMedHealth, 2025 (Best Paper)</div>
-        </div> -->
 
-        <div class="publication">
-          <a href="https://www.biorxiv.org/content/10.64898/2026.02.25.708091v1.full" class="title">MAP: A Knowledge-driven Framework for Predicting Single-cell Responses for Unprofiled Drugs</a><br>
-          <div class="authors">Jinghao Feng*, Ziheng Zhao*, <span class="highlight_author">Xiaoman Zhang*</span>, Mingfei Liu, Jingyi Chen, Xingran Quan, Jian Zhang, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Preprint, 2026</div>
-        </div>
+        <p class="full-pubs-link">
+          See the <a href="publications.html">full publication list</a> for all papers.
+        </p>
 
-        <div class="publication">
-          <a href="https://www.biorxiv.org/content/10.64898/2026.02.28.708711v1" class="title">Phenotypic Bioactivity Prediction as Open-set Biological Assay Querying</a><br>
-          <div class="authors">Yuze Sun*, <span class="highlight_author">Xiaoman Zhang*</span>, Qiaoyu Zheng, Hanzheng Li, Jianming Zhang, Liang Hong, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Preprint, 2026</div>
-        </div>
+        <div class="research-subheading">AI for Virtual Cell</div>
 
-        <div class="publication">
-          <a href="https://arxiv.org/abs/2512.17838" class="title">ReX-MLE: The Autonomous Agent Benchmark for Medical Imaging Challenges</a><br>
-          <div class="authors">Roshan Kenia*, <span class="highlight_author">Xiaoman Zhang*</span>, Pranav Rajpurkar</div>
-          <div class="venue">MIDL (Oral), 2026</div>
-        </div>
+        <table class="pub-table"><tbody>
+          <tr>
+            <td class="pub-img-cell">
+              <img src="image/MAP.png" alt="MAP">
+            </td>
+            <td class="pub-text-cell">
+              <a href="https://www.biorxiv.org/content/10.64898/2026.02.25.708091v1.full" class="title">MAP: A Knowledge-driven Framework for Predicting Single-cell Responses for Unprofiled Drugs</a><br>
+              <div class="authors">Jinghao Feng*, Ziheng Zhao*, <span class="highlight_author">Xiaoman Zhang*</span>, Mingfei Liu, Jingyi Chen, Xingran Quan, Boyang Fu, Jian Zhang, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+              <div class="venue">Preprint, 2026</div>
+              <div class="abstract">Most existing models for predicting drug-induced single-cell responses fail to generalize beyond their training compound set, limiting in-silico screening to a narrow chemical space. MAP introduces a knowledge-driven framework that grounds predictions in molecular structure and biological pathway priors, enabling transcriptomic response prediction for drugs never seen during training. This opens the door to systematic in-silico screening across novel chemical libraries &mdash; a key step toward predictive, simulation-driven drug discovery.</div>
+            </td>
+          </tr>
+        </tbody></table>
 
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2507.22030" class="title">ReXGroundingCT: A 3D Chest CT Dataset for Segmentation of Findings from Free-Text Reports</a><br>
-          <div class="authors">Mohammed Baharoon, Luyang Luo, Michael Moritz, Abhinav Kumar, Sung Eun Kim, <span class="highlight_author">Xiaoman Zhang</span>, Miao Zhu, Mahmoud Hussain Alabbad, Maha Sbayel Alhazmi, Neel P. Mistry, Lucas Bijnens, Kent Ryan Kleinschmidt, Brady Chrisler, Sathvik Suryadevara, Sri Sai Dinesh Jaliparthi, Noah Michael Prudlo, Mark David Marino, Jeremy Palacio, Rithvik Akula, Di Zhou, Hong-Yu Zhou, Ibrahim Ethem Hamamci, Scott J. Adams, Hassan Rayhan AlOmaish, Pranav Rajpurkar</div>
-          <div class="venue">Technical Report, 2025</div>
-        </div>
+        <table class="pub-table"><tbody>
+          <tr>
+            <td class="pub-img-cell">
+              <img src="image/OpenPheno.png" alt="Phenotypic Bioactivity Prediction">
+            </td>
+            <td class="pub-text-cell">
+              <a href="https://www.biorxiv.org/content/10.64898/2026.02.28.708711v1" class="title">Phenotypic Bioactivity Prediction as Open-set Biological Assay Querying</a><br>
+              <div class="authors">Yuze Sun*, <span class="highlight_author">Xiaoman Zhang*</span>, Qiaoyu Zheng, Hanzheng Li, Jianming Zhang, Liang Hong, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+              <div class="venue">Preprint, 2026</div>
+              <div class="abstract">Phenotypic compound profiling is fundamentally open-ended: each new biological assay defines a new target space that models trained on fixed assay panels cannot handle. We reformulate phenotypic bioactivity prediction as an open-set retrieval problem in which assays themselves are treated as queryable entities. The resulting framework generalizes to unseen targets and assays, enabling scalable, hypothesis-free compound profiling at the scale needed for real-world screening campaigns.</div>
+            </td>
+          </tr>
+        </tbody></table>
 
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2411.18672" class="title">FactCheXcker: Mitigating Measurement Hallucinations in Chest X-ray Report Generation Models</a><br>
-          <div class="authors">Alice Heiman, <span class="highlight_author">Xiaoman Zhang</span>, Emma Chen, Sung Eun Kim, Pranav Rajpurkar</div>
-          <div class="venue">CVPR, 2025</div>
-        </div>
+        <div class="research-subheading">AI for Medicine</div>
 
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2411.15122v1" class="title">ReXrank: A Public Leaderboard for AI-Powered Radiology Report Generations</a><br>
-          <div class="authors"><span class="highlight_author">Xiaoman Zhang</span>, Hong-Yu Zhou, Xiaoli Yang, Oishi Banerjee, Julián N. Acosta, Josh Miller, Ouwen Huang, Pranav Rajpurkar</div>
-          <div class="venue">AAAI Bridge Program - AIMedHealth, 2025</div>
-        </div>
-        
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2407.16684" class="title">AutoRG-Brain: Grounded Report Generation for Brain MRI</a><br>
-          <div class="authors">Jiayu Lei, <span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Lisong Dai, Ya Zhang, Yanyong Zhang, Yanfeng Wang, Weidi Xie, Yuehua Li</div>
-          <div class="venue">JBHI, 2025</div>
-        </div>
+        <table class="pub-table"><tbody>
+          <tr>
+            <td class="pub-img-cell">
+              <img src="image/JACC_CT.png" alt="Opportunistic Cardiovascular Risk Assessment">
+            </td>
+            <td class="pub-text-cell">
+              <a href="https://www.jacc.org/doi/10.1016/j.jacc.2026.02.5095" class="title">Opportunistic Cardiovascular Risk Assessment Using Routine Head CT in the Emergency Department</a><br>
+              <div class="authors"><span class="highlight_author">Xiaoman Zhang*</span>, Julian N. Acosta*, Siddhant Dogra, Erica N. Silva, Sanjay Basu, Harlan M. Krumholz, Rohan Khera, Pranav Rajpurkar, David Kim</div>
+              <div class="venue">JACC, 2026</div>
+              <div class="abstract">Cardiovascular risk is often discovered only after an acute event, even though millions of emergency-department patients receive head CTs each year for unrelated reasons. We show that these routine, "opportunistic" head CTs contain rich vascular calcification signals that AI can extract to stratify long-term cardiovascular risk. This enables early identification of high-risk patients &mdash; and personalized prevention &mdash; without any additional imaging, radiation, or cost to the patient.</div>
+            </td>
+          </tr>
+        </tbody></table>
 
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2404.16754" class="title">RadGenome-Chest CT: A Grounded Vision-Language Dataset for Chest CT Analysis</a><br>
-          <div class="authors"><span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Ziheng Zhao, Jiayu Lei, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
-          <div class="venue">Nature Scientific Data, 2025</div>
-        </div>
-
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2404.16754" class="title">Large-Vocabulary Segmentation for Medical Images with Text Prompts</a><br>
-          <div class="authors">Ziheng Zhao, Yao Zhang, Chaoyi Wu, <span class="highlight_author">Xiaoman Zhang</span>, Xiao Zhou, Ya Zhang, Yanfeng Wang, and Weidi Xie</div>
-          <div class="venue">npj Digital Medicine, 2025</div>
-        </div>
-
-        <!-- <div class="publication">
-          <a href="https://www.medrxiv.org/content/medrxiv/early/2024/06/24/2024.06.24.24309405.full.pdf" class="title">RaTEScore: A Metric for Radiology Report Generation</a><br>
-          <div class="authors">Weike Zhao, Chaoyi Wu, <span class="highlight_author">Xiaoman Zhang</span>, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
-          <div class="venue">EMNLP, 2024</div>
-        </div> -->
-
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2404.09942v1.pdf" class="title">Knowledge-enhanced Visual-Language Pretraining for Computational Pathology</a><br>
-          <div class="authors">Xiao Zhou, <span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
-          <div class="venue">ECCV (Oral), 2024</div>
-        </div>
-
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2402.13963.pdf" class="title">Towards Building Multilingual Language Model for Medicine</a><br>
-          <div class="authors">Pengcheng Qiu*, Chaoyi Wu*, <span class="highlight_author">Xiaoman Zhang</span>, Weixiong Lin, Haicheng Wang, Ya Zhang, Yanfeng Wang, Weidi Xie</div>
-          <div class="venue">Nature Communications, 2024</div>
-        </div>
-
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2308.02463.pdf" class="title">Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D & 3D Medical Data</a><br>
-          <div class="authors">Chaoyi Wu*,<span class="highlight_author">Xiaoman Zhang*</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Nature Communications, 2025</div>
-        </div>
-        
-        <div class="publication"> 
-          <a href="https://xiaoman-zhang.github.io/PMC-VQA/" class="title">PMC-VQA: Visual Instruction Tuning for Medical Visual Question Answering</a><br>
-          <div class="authors"><span class="highlight_author">Xiaoman Zhang*</span>, Chaoyi Wu*, Ziheng Zhao, Weixiong Lin, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Communications Medicine, 2024</div>
-        </div>
-
-        <div class="publication"> 
-          <a href="https://arxiv.org/pdf/2304.14454.pdf" class="title">PMC-LLaMA: Towards Building Open-source Language Models for Medicineg</a><br>
-          <div class="authors">Chaoyi Wu*, Weixiong Lin*,<span class="highlight_author">Xiaoman Zhang</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Journal of the American Medical Informatics Association, 2024</div>
-        </div>
-
-        <div class="publication">
-          <a href="https://arxiv.org/pdf/2303.07240" class="title">PMC-CLIP: Contrastive Language-Image Pre-training using Biomedical Documents</a><br>
-          <div class="authors">Weixiong Lin*, Ziheng Zhao*, <span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">MICCAI, 2023 (Final List of MICCAI Young Scientist Publication Impact Award)</div>
-        </div>
-
-        <div class="publication">
-          <a href="https://xiaoman-zhang.github.io/KAD/" class="title">Knowledge-enhanced Visual-Language Pre-training on Chest Radiology Images</a><br>
-          <div class="authors"><span class="highlight_author">Xiaoman Zhang</span>, Chaoyi Wu, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">Nature Communications, 2023</div>
-        </div>
-<!-- 
-        <div class="publication">
-          <a href="https://chaoyi-wu.github.io/MedKLIP/" class="title">MedKLIP: Medical Knowledge Enhanced Language-Image Pre-Training in Radiology</a><br>
-          <div class="authors">Chaoyi Wu, <span class="highlight_author">Xiaoman Zhang</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
-          <div class="venue">ICCV, 2023</div>
-        </div> -->
+        <table class="pub-table"><tbody>
+          <tr>
+            <td class="pub-img-cell">
+              <img src="image/RadFM.png" alt="RadFM">
+            </td>
+            <td class="pub-text-cell">
+              <a href="https://www.nature.com/articles/s41467-025-62385-7" class="title">Towards Generalist Foundation Model for Radiology by Leveraging Web-scale 2D &amp; 3D Medical Data</a><br>
+              <div class="authors">Chaoyi Wu*, <span class="highlight_author">Xiaoman Zhang*</span>, Yanfeng Wang, Ya Zhang, Weidi Xie</div>
+              <div class="venue">Nature Communications, 2025</div>
+              <div class="abstract">Despite the success of foundation models in general vision and language, radiology has remained fragmented across modality- and task-specific systems. We introduce RadFM, a generalist radiology foundation model trained on web-scale 2D and 3D medical data spanning X-ray, CT, and MRI. A single unified architecture handles diverse tasks &mdash; VQA, report generation, diagnosis, and visual grounding &mdash; across modalities, taking a step toward generalist medical AI that scales with data rather than task-specific engineering.</div>
+            </td>
+          </tr>
+        </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
