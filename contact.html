@@ -26,6 +26,22 @@
       line-height: 1.7;
       padding-left: 1.3rem;
     }
+    .lang-switch {
+      text-align: center;
+      margin: 1rem 0 1.5rem 0;
+      font-size: 13px;
+    }
+    .lang-switch a {
+      margin: 0 0.4rem;
+    }
+    .section-divider {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 2.5rem 0 1.5rem 0;
+    }
+    .zh {
+      font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', Verdana, Helvetica, sans-serif;
+    }
   </style>
 </head>
 <body>
@@ -37,49 +53,107 @@
           <name> Prospective Students </name>
         </p>
 
-        <p class="intro">
-          Thank you for your interest in joining my group at Shanghai Jiao Tong University. I will join SJTU as an Associate Professor in <strong>July 2026</strong> and am currently recruiting <strong>PhD students starting in 2027</strong>.
+        <p class="lang-switch">
+          <a href="#en" target="_self">English</a> | <a href="#zh" target="_self">中文</a>
         </p>
 
-        <h2>Vision</h2>
+        <a id="en"></a>
 
         <p class="intro">
-          My long-term goal is to build AI systems for drug discovery, from predictive models of biological systems, through computational screening and optimization, to clinical translation, closing the loop between simulation, experiment, and patient impact.
+          I will join Shanghai Jiao Tong University as an Associate Professor in <strong>July 2026</strong>, and am recruiting <strong>PhD students starting in 2027</strong>.
         </p>
 
         <h2>Research Directions</h2>
 
         <ul class="checklist">
-          <li><strong>AI for Drug Discovery.</strong> We develop AI methods that model how biological systems respond to perturbations and, crucially, that invert the mapping to design interventions.</li>
-          <li><strong>AI for Medicine.</strong> We build generalist medical foundation models, multimodal reasoning systems across imaging and clinical text, autonomous clinical decision support, and rigorous evaluation frameworks for medical AI.</li>
+          <li><strong>AI for Drug Discovery.</strong> Predictive models of how biological systems respond to perturbations (single-cell transcriptomics, phenotypic bioactivity, molecular design), closing the loop between simulation, experiment, and clinical translation.</li>
+          <li><strong>AI for Medicine.</strong> Generalist medical foundation models, multimodal reasoning across imaging and clinical text, autonomous clinical decision support, and rigorous evaluation frameworks.</li>
         </ul>
 
         <h2>Who I Am Looking For</h2>
 
-        <p class="intro">
-          I am looking for students who are excited about working at the interface of machine learning, biology, and medicine. Strong candidates from CS, EE, biomedical engineering, biology, or related backgrounds are all welcome. Prior experience with foundation models, single-cell/omics data, or computational biology is a plus but not required.
-        </p>
+        <ul class="checklist">
+          <li>Genuine curiosity about the intersection of AI and life sciences / medicine.</li>
+          <li>Self-driven, clear thinking, and goal-oriented.</li>
+          <li>Backgrounds in CS, EE, biomedical engineering, biology, or related fields are all welcome.</li>
+        </ul>
+
+        <h2>What You Will Get</h2>
+
+        <ul class="checklist">
+          <li>Hands-on mentorship on core research projects, from research direction to experimental details.</li>
+          <li>The platform and compute resources of SJTU's School of AI to support high-quality work.</li>
+          <li>Active academic collaborations with Harvard, Yale, Oxford, and other institutions abroad.</li>
+        </ul>
 
         <h2>How to Apply</h2>
 
         <p class="intro">
-          Please send me an email at <strong>xiaomanzhang.zxm [at] gmail.com</strong> with the subject line <em>"Prospective PhD 2027, [Your Name]"</em>, and include:
+          Email me at <strong>xiaomanzhang.zxm [at] gmail.com</strong> with the subject line <em>"Prospective PhD 2027, [Your Name]"</em>, and include:
         </p>
 
         <ul class="checklist">
-          <li>Your CV (with GPA and ranking, if available)</li>
-          <li>A brief statement (1&ndash;2 paragraphs) of your research interests</li>
+          <li>CV (with GPA and ranking, if available)</li>
+          <li>A brief statement (1 to 2 paragraphs) of your research interests</li>
           <li>Representative papers, projects, or code (links are fine)</li>
-          <li>Transcripts (unofficial is fine for the initial email)</li>
+          <li>Transcripts (unofficial is fine)</li>
         </ul>
 
         <div class="email-box">
-          I read every email personally, but reply time varies. If you don't hear back within two weeks, feel free to send a polite follow-up.
+          I read every email personally. If you don't hear back within two weeks, feel free to send a polite follow-up.
         </div>
 
-        <p class="intro">
-          Looking forward to hearing from you.
-        </p>
+        <hr class="section-divider">
+
+        <a id="zh"></a>
+
+        <div class="zh">
+
+          <p class="intro">
+            我将于 <strong>2026年7月</strong> 加入上海交通大学人工智能学院担任副教授，<strong>2027年入学</strong>招收博士生。
+          </p>
+
+          <h2>研究方向</h2>
+
+          <ul class="checklist">
+            <li><strong>AI for Drug Discovery。</strong>构建能够预测生物系统对扰动响应的AI模型（单细胞转录组预测、表型活性预测、分子设计）。长期目标是实现"模拟 → 实验 → 临床转化"的闭环，用计算的方式加速新药发现。</li>
+            <li><strong>AI for Medicine。</strong>构建通用医学基础模型，涵盖多模态推理（影像+临床文本）、自动化临床决策支持、以及医学AI的严格评估体系。</li>
+          </ul>
+
+          <h2>招生要求</h2>
+
+          <ul class="checklist">
+            <li>对AI和生命科学/医学的交叉方向有真实的好奇心和热情，愿意投入时间。</li>
+            <li>自驱力强，逻辑清晰，目标明确。</li>
+            <li>欢迎计算机、电子、生物医学工程、生物学等相关背景的同学。</li>
+          </ul>
+
+          <h2>加入后你将获得</h2>
+
+          <ul class="checklist">
+            <li>参与核心科研项目，我会提供持续深入的指导，从idea方向到实验细节。</li>
+            <li>上海交大AI学院的平台资源和充足的计算集群，全力支持你做出高质量的工作。</li>
+            <li>与哈佛、耶鲁、牛津等海外高校的学术合作网络，帮你拓展国际视野。</li>
+          </ul>
+
+          <h2>如何联系我</h2>
+
+          <p class="intro">
+            请发邮件至 <strong>xiaomanzhang.zxm [at] gmail.com</strong>，邮件标题写 <em>"Prospective PhD 2027, [你的姓名]"</em>，并附上：
+          </p>
+
+          <ul class="checklist">
+            <li>个人简历（如有GPA与排名请注明）</li>
+            <li>一段简短的研究兴趣陈述（1 至 2 段）</li>
+            <li>代表性论文、项目或代码（链接即可）</li>
+            <li>成绩单（初次联系非官方版即可）</li>
+          </ul>
+
+          <div class="email-box">
+            如果两周内没有收到回复，欢迎礼貌地再发一封提醒。
+          </div>
+
+        </div>
 
         <p class="back-link" style="text-align:center;margin-top:2rem;">
           <a href="index.html" target="_self">&larr; Back to homepage</a>
