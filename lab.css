@@ -321,3 +321,5 @@ footer{font-size:.75rem}footer strong{font-size:.875rem}
  .research-paper>img{width:100%}
  .maiya-companion img{width:180px}
 }
+
+@media(min-width:601px){.profile .portrait{padding-top:.3125rem}}
