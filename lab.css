@@ -330,3 +330,26 @@ footer{font-size:.75rem}footer strong{font-size:.875rem}
  .profile-tabs button{font-size:.8125rem}
  .maiya-companion img{width:12.5rem;max-width:100%}
 }
+
+/* Use color, rather than underlines, to distinguish links. */
+a{color:#27658b}
+a:hover{color:#174563}
+a,a:hover,a:focus-visible,.text-link,.news-list a,.bio a,.join-copy a,
+.dataset-link,.collaborator-list li>a,.top-links a,.research-direction:hover h3{
+ text-decoration:none
+}
+.scholar-box{color:#27658b;border-color:#9ab2c2}
+.scholar-box:hover{color:#174563;border-color:#27658b}
+
+/* One shared style for the explanatory text under each panel heading. */
+#panel-news .page-intro .deck,
+#panel-research .page-intro .deck,
+#panel-publications .page-intro .deck,
+#panel-join .page-intro .deck,
+main>.page-intro .deck,
+.collaboration-note{
+ font-family:'Lato',Verdana,Helvetica,sans-serif;
+ font-size:.84375rem;font-weight:400;line-height:1.6;color:#555
+}
+.page-intro .deck .note{font:inherit;color:inherit}
+.profile .bio p{font-size:.6875rem;line-height:1.5}
