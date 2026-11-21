@@ -235,3 +235,9 @@ footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
  .profile{grid-template-columns:1fr}
  .profile .portrait img{width:160px}
 }
+
+/* Balance the biography and social links against the portrait. */
+.profile .bio p{font-size:12px;line-height:1.45;margin-top:8px}
+.profile .profile-links{font-size:11.5px;line-height:1.5;margin-top:10px!important}
+@media(min-width:601px){.profile .portrait{padding-top:62px}}
+@media(max-width:600px){.profile .portrait{padding-top:0}}
