@@ -272,3 +272,52 @@ main>.page-intro .deck{font-size:13.5px;line-height:1.6}
 .maiya-companion{display:grid;grid-template-columns:200px minmax(0,1fr);gap:26px;align-items:center}
 .maiya-companion img{width:200px;height:auto;border-radius:4px}
 @media(max-width:600px){.maiya-companion{grid-template-columns:1fr;gap:18px}.maiya-companion img{width:180px}}
+
+/* Fluid desktop scale: unchanged through 1512px, capped at 2560px. */
+:root{font-size:clamp(100%,calc(100% + .48855vw - 7.387px),132%)}
+.wrap{width:min(calc(100% - 40px),clamp(860px,calc(30.53435vw + 398.3206px),1180px))}
+body{font-size:.96875rem}
+.profile{grid-template-columns:11.5625rem minmax(0,1fr);gap:1.875rem;padding-top:2rem}
+.profile .portrait img{width:11.5625rem}
+.profile h1{font-size:1.5rem;margin:.3125rem 0 .75rem}
+.profile h1 .chinese{font-size:inherit}
+.profile .eyebrow{font-size:.75rem}
+.profile .bio p{font-size:.75rem;margin-top:.5rem}
+.profile .profile-links{font-size:.71875rem;margin-top:.625rem!important}
+.profile-content{margin-top:2rem}
+.profile-tabs{gap:0 1.75rem}
+.profile-tabs button{font-size:.8125rem;padding:.875rem .125rem .8125rem}
+.profile-panel{padding-top:1.5rem}
+.profile-panel .page-intro h2,.page-intro h1,.people-section>h2,.focus-heading h2,.join-copy h2{font-size:1.125rem}
+h2{font-size:1.375rem}h3,.join-copy .internship-section h3,.people-subheading{font-size:1.0625rem}
+#panel-research .page-intro .deck,#panel-publications .page-intro .deck,
+#panel-join .page-intro .deck,main>.page-intro .deck,.collaboration-note{font-size:.84375rem}
+#panel-news .deck{font-size:.875rem}
+.deck,.research-with-work>p,.focus-heading p,.join-copy p,.checklist{font-size:.96875rem}
+/* Reapply the smaller introduction scale after the general body rule. */
+#panel-research .page-intro .deck,#panel-publications .page-intro .deck,
+#panel-join .page-intro .deck,main>.page-intro .deck{font-size:.84375rem}
+.title,.spider-work h3{font-size:1.03125rem}
+.authors,.abstract,.collaborator-list li>div>p,.fun-notes p{font-size:.84375rem}
+.venue,.scholar-box{font-size:.8125rem}
+.impact-factor,.collaborator-list li>div>p.former-affiliation{font-size:.78125rem}
+.year-heading{font-size:1.75rem}
+.news-list li>div{font-size:.84375rem}
+.news-list time{font-size:.71875rem}
+.collaborator-list li>a,.student-list li{font-size:.90625rem}
+.lang-switch,.top-links,.button{font-size:.84375rem}
+.fun-notes h3{font-size:.9375rem}
+footer{font-size:.75rem}footer strong{font-size:.875rem}
+.research-paper{grid-template-columns:15rem minmax(0,1fr);gap:1.75rem}
+.research-paper>img{width:15rem}
+.join-copy{max-width:53.125rem}.fun-notes,.collaboration-note{max-width:45rem}
+.maiya-companion{grid-template-columns:minmax(0,1fr) 12.5rem;gap:1.625rem}
+.maiya-companion img{width:12.5rem}
+@media(min-width:601px){.profile .portrait{padding-top:1.625rem}}
+@media(max-width:600px){
+ .profile,.research-paper,.maiya-companion{grid-template-columns:1fr}
+ .profile .portrait{padding-top:0}.profile .portrait img{width:160px}
+ .profile-tabs{gap:0 18px}.profile-tabs button{font-size:12px}
+ .research-paper>img{width:100%}
+ .maiya-companion img{width:180px}
+}
