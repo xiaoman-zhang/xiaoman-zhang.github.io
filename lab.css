@@ -177,3 +177,40 @@ h2{font-size:26px}h3{font-size:21px}
  .news-list li{grid-template-columns:72px minmax(0,1fr);gap:12px}
  .profile-tabs{gap:22px}
 }
+
+/* Typography follows zhouhy.org's body, section, publication and navigation scales. */
+body{font-size:15.5px;line-height:1.62}
+.bio p{font-size:15.5px;line-height:1.68}
+.profile .eyebrow{font-size:14px;font-weight:400}
+.profile-links{font-size:13.5px}
+h1,h2,h3{font-weight:500}
+h2,.profile-panel .page-intro h2,.people-section>h2,.focus-heading h2,
+.join-copy h2{font-size:22px;font-weight:500;line-height:1.35}
+.page-intro h1{font-size:22px;line-height:1.35}
+h3,.join-copy .internship-section h3,.people-subheading{font-size:17px;font-weight:500;line-height:1.4}
+.profile h1{font-size:30px;font-weight:500;line-height:1.2}
+.profile h1 .chinese{font-size:inherit;font-weight:inherit}
+.profile-tabs button{font-size:13px;font-weight:400;letter-spacing:.04em;padding:14px 2px 13px}
+.profile-tabs button[aria-selected="true"]{font-weight:500}
+.deck,.research-with-work>p,.focus-heading p,.join-copy p,.checklist{font-size:15.5px;line-height:1.68}
+.title,.spider-work h3{font-size:16.5px;font-weight:500;line-height:1.45}
+.authors{font-size:13.5px;line-height:1.55;margin-top:6px}
+.venue{font-size:13px;line-height:1.6;margin-top:4px}
+.impact-factor{font-size:12.5px}
+.abstract{font-size:13.5px;line-height:1.6;margin-top:8px}
+.year-heading{font-size:28px;font-weight:500;line-height:1.1;margin-top:32px;margin-bottom:18px}
+.news-list li>div{font-size:14.5px;line-height:1.65}
+.news-list time{font-size:12px;font-weight:500;letter-spacing:.04em}
+.collaborator-list li>a{font-size:14.5px;font-weight:400}
+.collaborator-list li>div>p{font-size:13.5px;line-height:1.6}
+.collaborator-list li>div>p.former-affiliation{font-size:12.5px}
+.student-list li{font-size:14.5px}
+.scholar-box{font-size:13px;padding:6px 14px;border-radius:2px}
+.lang-switch,.top-links,.button{font-size:13.5px}
+footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
+@media(max-width:600px){
+ .profile h1{font-size:28px}
+ .profile-tabs button{font-size:12px;padding-top:12px;padding-bottom:11px}
+ .profile-tabs{gap:18px}
+ .join-copy .internship-section h3{font-size:17px}
+}
