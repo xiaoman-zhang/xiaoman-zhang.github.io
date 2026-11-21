@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-11-21",
+  "policy": "Prefer 5-Year Impact Factor; use 2-Year only when a 5-Year metric is unavailable. Omit unverified values.",
+  "journals": {
+    "Nature Chemical Biology": {
+      "metric": "5-Year Impact Factor",
+      "value": "16.2",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/nchembio/journal-impact"
+    },
+    "Nature Machine Intelligence": {
+      "metric": "5-Year Impact Factor",
+      "value": "36.0",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/natmachintell/journal-impact"
+    },
+    "Nature Medicine": {
+      "metric": "5-Year Impact Factor",
+      "value": "52.4",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/nm/journal-impact"
+    },
+    "Nature Communications": {
+      "metric": "5-Year Impact Factor",
+      "value": "18.9",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/ncomms/journal-impact"
+    },
+    "npj Digital Medicine": {
+      "metric": "5-Year Impact Factor",
+      "value": "19.7",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/npjdigitalmed/journal-impact"
+    },
+    "Nature Scientific Data": {
+      "metric": "5-Year Impact Factor",
+      "value": "9.3",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/sdata/journal-impact"
+    },
+    "Communications Medicine": {
+      "metric": "5-Year Impact Factor",
+      "value": "7.5",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/commsmed/journal-impact"
+    },
+    "Journal of the American Medical Informatics Association": {
+      "metric": "5-Year Impact Factor",
+      "value": "6.9",
+      "metric_year": 2025,
+      "source": "https://academic.oup.com/jamia/"
+    },
+    "Computerized Medical Imaging and Graphics": {
+      "metric": "5-Year Impact Factor",
+      "value": "6.2",
+      "metric_year": null,
+      "source": "https://wos-journal.info/journalid/558"
+    },
+    "Radiology: Artificial Intelligence": {
+      "metric": "5-Year Impact Factor",
+      "value": "16.1",
+      "metric_year": null,
+      "source": "https://wos-journal.info/journalid/23649"
+    },
+    "Radiology": {
+      "metric": "5-Year Impact Factor",
+      "value": "15.5",
+      "metric_year": null,
+      "source": "https://www.wos-journal.info/journalid/109"
+    },
+    "JBHI": {
+      "metric": "5-Year Impact Factor",
+      "value": "8.0",
+      "metric_year": null,
+      "source": "https://www.wos-journal.info/journalid/2684"
+    },
+    "JACC": {
+      "metric": "5-Year Impact Factor",
+      "value": "25.6",
+      "metric_year": 2025,
+      "source": "https://scholar.pusan.ac.kr/journals/14825"
+    },
+    "Nature": {
+      "metric": "5-Year Impact Factor",
+      "value": "56.7",
+      "metric_year": 2025,
+      "source": "https://www.nature.com/nature/journal-impact"
+    }
+  },
+  "unverified": [
+    "NEJM AI: no reliable official Journal Impact Factor verified; omitted."
+  ]
+}
