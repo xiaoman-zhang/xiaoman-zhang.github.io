@@ -246,3 +246,10 @@ footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
 @media(min-width:601px){.profile .portrait{padding-top:26px}}
 .profile-tabs{overflow:visible;flex-wrap:wrap;gap:0 28px}
 @media(max-width:600px){.profile-tabs{gap:0 18px}}
+
+/* Subtle panel headings and consistent content start positions. */
+.profile-panel .page-intro h2,.page-intro h1,
+.people-section>h2,.focus-heading h2,.join-copy h2{font-size:18px;font-weight:500;line-height:1.4}
+#panel-people>.people-section,main>.people-section{margin-top:0}
+.people-section>h2{margin-bottom:14px}
+.collaboration-note{font-size:13.5px;line-height:1.6;color:#555;margin:0 0 18px;max-width:720px}
