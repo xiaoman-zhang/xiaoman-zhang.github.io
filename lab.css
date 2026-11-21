@@ -214,3 +214,11 @@ footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
  .profile-tabs{gap:18px}
  .join-copy .internship-section h3{font-size:17px}
 }
+
+/* Compact biography only; content tabs keep their existing typography. */
+.profile h1{font-size:24px;line-height:1.25;margin:5px 0 12px}
+.profile h1 .chinese{font-size:inherit;font-weight:inherit}
+.profile .bio p{font-size:14px;line-height:1.6;margin-top:10px}
+.profile .eyebrow{font-size:12px}
+.profile .profile-links{font-size:12.5px;margin-top:12px!important}
+@media(max-width:600px){.profile h1{font-size:24px}}
