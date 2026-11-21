@@ -356,3 +356,7 @@ main>.page-intro .deck,
 
 /* Give links additional emphasis alongside their blue color. */
 a[href],a.title,.collaborator-list li>a{font-weight:700}
+
+.maiya-companion{grid-template-columns:minmax(0,1fr) 11.25rem}
+.maiya-companion img{width:11.25rem}
+@media(max-width:600px){.maiya-companion{grid-template-columns:1fr}}
