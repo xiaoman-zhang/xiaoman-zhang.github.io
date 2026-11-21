@@ -255,3 +255,8 @@ footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
 .collaboration-note{font-size:13.5px;line-height:1.6;color:#555;margin:0 0 18px;max-width:720px}
 
 .profile-tabs{border-top:1px solid #ddd}
+
+.fun-notes{max-width:720px}
+.fun-notes section{margin:0 0 26px}
+.fun-notes h3{font-size:15px;font-weight:500;margin-bottom:8px}
+.fun-notes p{font-size:13.5px;line-height:1.7;color:#444}
