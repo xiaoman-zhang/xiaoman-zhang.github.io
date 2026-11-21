@@ -260,3 +260,10 @@ footer{font-size:12px}footer strong{font-size:14px;font-weight:500}
 .fun-notes section{margin:0 0 26px}
 .fun-notes h3{font-size:15px;font-weight:500;margin-bottom:8px}
 .fun-notes p{font-size:13.5px;line-height:1.7;color:#444}
+
+/* Match panel introductions to the collaborators note. */
+#panel-research .page-intro .deck,
+#panel-publications .page-intro .deck,
+#panel-join .page-intro .deck,
+main>.page-intro .deck{font-size:13.5px;line-height:1.6}
+.page-intro .deck .note{font-size:inherit;line-height:inherit}
