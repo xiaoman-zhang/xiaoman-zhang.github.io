@@ -355,4 +355,4 @@ main>.page-intro .deck,
 .profile .bio p{font-size:.6875rem;line-height:1.5}
 
 /* Give links additional emphasis alongside their blue color. */
-a{font-weight:700}
+a[href],a.title,.collaborator-list li>a{font-weight:700}
