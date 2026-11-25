@@ -360,3 +360,35 @@ a[href],a.title,.collaborator-list li>a{font-weight:700}
 .maiya-companion{grid-template-columns:minmax(0,1fr) 11.25rem}
 .maiya-companion img{width:11.25rem}
 @media(max-width:600px){.maiya-companion{grid-template-columns:1fr}}
+
+/* Share the biography's body size across panels and their standalone pages.
+   Heading, subheading, publication-title and navigation sizes stay independent. */
+:root{--body-text-size:.6875rem}
+body,
+.profile .bio p,
+.deck,
+#panel-news .page-intro .deck,
+#panel-research .page-intro .deck,
+#panel-publications .page-intro .deck,
+#panel-join .page-intro .deck,
+main>.page-intro .deck,
+.collaboration-note,
+.research-with-work>p,
+.join-copy p,
+.checklist,
+.authors,
+.abstract,
+.venue,
+.impact-factor,
+.note,
+.news-list li>div,
+.news-list time,
+.collaborator-list li>a,
+.collaborator-list li>div>p,
+.collaborator-list li>div>p.former-affiliation,
+.student-list li,
+.people-intro,
+.fun-notes p,
+.scholar-box,
+.lang-switch,
+.dataset-link{font-size:var(--body-text-size)}
