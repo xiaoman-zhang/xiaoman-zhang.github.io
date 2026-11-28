@@ -301,7 +301,7 @@ h2{font-size:1.375rem}h3,.join-copy .internship-section h3,.people-subheading{fo
 .authors,.abstract,.collaborator-list li>div>p,.fun-notes p{font-size:.84375rem}
 .venue,.scholar-box{font-size:.8125rem}
 .impact-factor,.collaborator-list li>div>p.former-affiliation{font-size:.78125rem}
-.year-heading{font-size:1.75rem}
+.year-heading{font-size:1.125rem}
 .news-list li>div{font-size:.84375rem}
 .news-list time{font-size:.71875rem}
 .collaborator-list li>a,.student-list li{font-size:.90625rem}
@@ -392,3 +392,7 @@ main>.page-intro .deck,
 .scholar-box,
 .lang-switch,
 .dataset-link{font-size:var(--body-text-size)}
+
+/* Emphasize the news congratulations on both the tab and standalone page. */
+#panel-news .page-intro .news-congratulations,
+main>.page-intro .news-congratulations{color:#000;font-weight:700}
